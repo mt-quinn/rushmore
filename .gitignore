@@ -15,6 +15,10 @@ dist-ssr
 # Convex CLI scratch (binaries, local backend state)
 .convex/
 
+# Large downloaded source archives used by reproducible dataset builders
+data/source/
+data/generated/
+
 # Dev-only artifacts (test GIFs, captured frames, scratch assets)
 public/_dev/
 

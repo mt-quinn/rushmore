@@ -3,7 +3,8 @@ import { createRoot } from 'react-dom/client'
 import { ConvexAuthProvider } from '@convex-dev/auth/react'
 import { ConvexReactClient } from 'convex/react'
 import './index.css'
-import App from './App.tsx'
+import './rushmore.css'
+import App from './RushmoreApp.tsx'
 
 // We always render a ConvexProvider so the multiplayer hooks (useQuery /
 // useMutation) can call into the Convex client unconditionally. When no

@@ -1,0 +1,4775 @@
+{
+  "items": [
+    {
+      "ageAtFirstInauguration": 57,
+      "domain": "presidents",
+      "id": "president:george-washington",
+      "name": "George Washington",
+      "party": "Independent",
+      "presidencyNumbers": [
+        1
+      ],
+      "sourceCoverage": {
+        "approval": false,
+        "elections": true,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 57
+        },
+        "best_electoral_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 100.0
+        },
+        "election_wins": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "wins",
+          "value": 2
+        },
+        "electoral_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "electoral votes",
+          "value": 201.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 1.02
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 8.0
+        },
+        "popular_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "votes",
+          "value": 0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 7.85
+        }
+      },
+      "terms": [
+        {
+          "end": "1797-03-04",
+          "number": 1,
+          "start": "1789-04-30"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 61,
+      "domain": "presidents",
+      "id": "president:john-adams",
+      "name": "John Adams",
+      "party": "Federalist",
+      "presidencyNumbers": [
+        2
+      ],
+      "sourceCoverage": {
+        "approval": false,
+        "elections": true,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 61
+        },
+        "best_electoral_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 51.1
+        },
+        "election_wins": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "wins",
+          "value": 1
+        },
+        "electoral_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "electoral votes",
+          "value": 71.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 0.25
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 1.0
+        },
+        "popular_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "votes",
+          "value": 0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 4.0
+        }
+      },
+      "terms": [
+        {
+          "end": "1801-03-04",
+          "number": 2,
+          "start": "1797-03-04"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 57,
+      "domain": "presidents",
+      "id": "president:thomas-jefferson",
+      "name": "Thomas Jefferson",
+      "party": "Democratic-Republican",
+      "presidencyNumbers": [
+        3
+      ],
+      "sourceCoverage": {
+        "approval": false,
+        "elections": true,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 57
+        },
+        "best_electoral_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 52.9
+        },
+        "election_wins": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "wins",
+          "value": 1
+        },
+        "electoral_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "electoral votes",
+          "value": 73.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 0.5
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 4.0
+        },
+        "popular_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "votes",
+          "value": 0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 8.0
+        }
+      },
+      "terms": [
+        {
+          "end": "1809-03-04",
+          "number": 3,
+          "start": "1801-03-04"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 57,
+      "domain": "presidents",
+      "id": "president:james-madison",
+      "name": "James Madison",
+      "party": "Democratic-Republican",
+      "presidencyNumbers": [
+        4
+      ],
+      "sourceCoverage": {
+        "approval": false,
+        "elections": false,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 57
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 0.12
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 1.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 8.0
+        }
+      },
+      "terms": [
+        {
+          "end": "1817-03-04",
+          "number": 4,
+          "start": "1809-03-04"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 58,
+      "domain": "presidents",
+      "id": "president:james-monroe",
+      "name": "James Monroe",
+      "party": "Democratic-Republican",
+      "presidencyNumbers": [
+        5
+      ],
+      "sourceCoverage": {
+        "approval": false,
+        "elections": false,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 58
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 0.12
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 1.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 8.0
+        }
+      },
+      "terms": [
+        {
+          "end": "1825-03-04",
+          "number": 5,
+          "start": "1817-03-04"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 57,
+      "domain": "presidents",
+      "id": "president:john-quincy-adams",
+      "name": "John Quincy Adams",
+      "party": "Democratic-Republican",
+      "presidencyNumbers": [
+        6
+      ],
+      "sourceCoverage": {
+        "approval": false,
+        "elections": false,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 57
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 0.75
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 3.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 4.0
+        }
+      },
+      "terms": [
+        {
+          "end": "1829-03-04",
+          "number": 6,
+          "start": "1825-03-04"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 61,
+      "domain": "presidents",
+      "id": "president:andrew-jackson",
+      "name": "Andrew Jackson",
+      "party": "Democratic",
+      "presidencyNumbers": [
+        7
+      ],
+      "sourceCoverage": {
+        "approval": false,
+        "elections": true,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 61
+        },
+        "best_electoral_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 76.0
+        },
+        "best_popular_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 56.1
+        },
+        "election_wins": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "wins",
+          "value": 3
+        },
+        "electoral_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "electoral votes",
+          "value": 496.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 1.5
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 12.0
+        },
+        "popular_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "votes",
+          "value": 1495604.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 8.0
+        }
+      },
+      "terms": [
+        {
+          "end": "1837-03-04",
+          "number": 7,
+          "start": "1829-03-04"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 54,
+      "domain": "presidents",
+      "id": "president:martin-van-buren",
+      "name": "Martin Van Buren",
+      "party": "Democratic",
+      "presidencyNumbers": [
+        8
+      ],
+      "sourceCoverage": {
+        "approval": false,
+        "elections": true,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 54
+        },
+        "best_electoral_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 57.8
+        },
+        "best_popular_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 50.8
+        },
+        "election_wins": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "wins",
+          "value": 1
+        },
+        "electoral_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "electoral votes",
+          "value": 170.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 2.5
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 10.0
+        },
+        "popular_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "votes",
+          "value": 764176.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 4.0
+        }
+      },
+      "terms": [
+        {
+          "end": "1841-03-04",
+          "number": 8,
+          "start": "1837-03-04"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 68,
+      "domain": "presidents",
+      "id": "president:william-henry-harrison",
+      "name": "William Henry Harrison",
+      "party": "Whig",
+      "presidencyNumbers": [
+        9
+      ],
+      "sourceCoverage": {
+        "approval": false,
+        "elections": true,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 68
+        },
+        "best_electoral_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 79.6
+        },
+        "best_popular_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 52.9
+        },
+        "election_wins": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "wins",
+          "value": 1
+        },
+        "electoral_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "electoral votes",
+          "value": 234.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 0.0
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 0.0
+        },
+        "popular_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "votes",
+          "value": 1275390.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 0.08
+        }
+      },
+      "terms": [
+        {
+          "end": "1841-04-04",
+          "number": 9,
+          "start": "1841-03-04"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 51,
+      "domain": "presidents",
+      "id": "president:john-tyler",
+      "name": "John Tyler",
+      "party": "Whig",
+      "presidencyNumbers": [
+        10
+      ],
+      "sourceCoverage": {
+        "approval": false,
+        "elections": false,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 51
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 4.34
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 17.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 3.92
+        }
+      },
+      "terms": [
+        {
+          "end": "1845-03-04",
+          "number": 10,
+          "start": "1841-04-04"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 49,
+      "domain": "presidents",
+      "id": "president:james-k-polk",
+      "name": "James K. Polk",
+      "party": "Democratic",
+      "presidencyNumbers": [
+        11
+      ],
+      "sourceCoverage": {
+        "approval": false,
+        "elections": true,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 49
+        },
+        "best_electoral_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 61.8
+        },
+        "best_popular_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 49.5
+        },
+        "election_wins": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "wins",
+          "value": 1
+        },
+        "electoral_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "electoral votes",
+          "value": 170.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 4.5
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 18.0
+        },
+        "popular_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "votes",
+          "value": 1339494.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 4.0
+        }
+      },
+      "terms": [
+        {
+          "end": "1849-03-04",
+          "number": 11,
+          "start": "1845-03-04"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 64,
+      "domain": "presidents",
+      "id": "president:zachary-taylor",
+      "name": "Zachary Taylor",
+      "party": "Whig",
+      "presidencyNumbers": [
+        12
+      ],
+      "sourceCoverage": {
+        "approval": false,
+        "elections": true,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 64
+        },
+        "best_electoral_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 56.2
+        },
+        "best_popular_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 47.3
+        },
+        "election_wins": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "wins",
+          "value": 1
+        },
+        "electoral_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "electoral votes",
+          "value": 163.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 3.7
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 5.0
+        },
+        "popular_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "votes",
+          "value": 1361393.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 1.35
+        }
+      },
+      "terms": [
+        {
+          "end": "1850-07-09",
+          "number": 12,
+          "start": "1849-03-04"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 50,
+      "domain": "presidents",
+      "id": "president:millard-fillmore",
+      "name": "Millard Fillmore",
+      "party": "Whig",
+      "presidencyNumbers": [
+        13
+      ],
+      "sourceCoverage": {
+        "approval": false,
+        "elections": false,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 50
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 4.53
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 12.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 2.65
+        }
+      },
+      "terms": [
+        {
+          "end": "1853-03-04",
+          "number": 13,
+          "start": "1850-07-09"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 48,
+      "domain": "presidents",
+      "id": "president:franklin-pierce",
+      "name": "Franklin Pierce",
+      "party": "Democratic",
+      "presidencyNumbers": [
+        14
+      ],
+      "sourceCoverage": {
+        "approval": false,
+        "elections": true,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 48
+        },
+        "best_electoral_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 85.8
+        },
+        "best_popular_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 50.8
+        },
+        "election_wins": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "wins",
+          "value": 1
+        },
+        "electoral_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "electoral votes",
+          "value": 254.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 8.75
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 35.0
+        },
+        "popular_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "votes",
+          "value": 1607510.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 4.0
+        }
+      },
+      "terms": [
+        {
+          "end": "1857-03-04",
+          "number": 14,
+          "start": "1853-03-04"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 65,
+      "domain": "presidents",
+      "id": "president:james-buchanan",
+      "name": "James Buchanan",
+      "party": "Democratic",
+      "presidencyNumbers": [
+        15
+      ],
+      "sourceCoverage": {
+        "approval": false,
+        "elections": true,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 65
+        },
+        "best_electoral_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 58.8
+        },
+        "best_popular_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 45.3
+        },
+        "election_wins": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "wins",
+          "value": 1
+        },
+        "electoral_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "electoral votes",
+          "value": 174.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 4.0
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 16.0
+        },
+        "popular_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "votes",
+          "value": 1836072.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 4.0
+        }
+      },
+      "terms": [
+        {
+          "end": "1861-03-04",
+          "number": 15,
+          "start": "1857-03-04"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 52,
+      "domain": "presidents",
+      "id": "president:abraham-lincoln",
+      "name": "Abraham Lincoln",
+      "party": "Republican",
+      "presidencyNumbers": [
+        16
+      ],
+      "sourceCoverage": {
+        "approval": false,
+        "elections": true,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 52
+        },
+        "best_electoral_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 90.6
+        },
+        "best_popular_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 55.1
+        },
+        "election_wins": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "wins",
+          "value": 2
+        },
+        "electoral_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "electoral votes",
+          "value": 392.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 11.65
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 48.0
+        },
+        "popular_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "votes",
+          "value": 4088044.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 4.12
+        }
+      },
+      "terms": [
+        {
+          "end": "1865-04-15",
+          "number": 16,
+          "start": "1861-03-04"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 56,
+      "domain": "presidents",
+      "id": "president:andrew-johnson",
+      "name": "Andrew Johnson",
+      "party": "Democratic",
+      "presidencyNumbers": [
+        17
+      ],
+      "sourceCoverage": {
+        "approval": false,
+        "elections": false,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 56
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 20.31
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 79.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 3.89
+        }
+      },
+      "terms": [
+        {
+          "end": "1869-03-04",
+          "number": 17,
+          "start": "1865-04-15"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 46,
+      "domain": "presidents",
+      "id": "president:ulysses-s-grant",
+      "name": "Ulysses S. Grant",
+      "party": "Republican",
+      "presidencyNumbers": [
+        18
+      ],
+      "sourceCoverage": {
+        "approval": false,
+        "elections": true,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 46
+        },
+        "best_electoral_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 81.9
+        },
+        "best_popular_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 55.6
+        },
+        "election_wins": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "wins",
+          "value": 2
+        },
+        "electoral_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "electoral votes",
+          "value": 500.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 27.12
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 217.0
+        },
+        "popular_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "votes",
+          "value": 6612118.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 8.0
+        }
+      },
+      "terms": [
+        {
+          "end": "1877-03-04",
+          "number": 18,
+          "start": "1869-03-04"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 54,
+      "domain": "presidents",
+      "id": "president:rutherford-b-hayes",
+      "name": "Rutherford B. Hayes",
+      "party": "Republican",
+      "presidencyNumbers": [
+        19
+      ],
+      "sourceCoverage": {
+        "approval": false,
+        "elections": true,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 54
+        },
+        "best_electoral_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 50.1
+        },
+        "best_popular_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 48.0
+        },
+        "election_wins": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "wins",
+          "value": 1
+        },
+        "electoral_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "electoral votes",
+          "value": 185.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 23.0
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 92.0
+        },
+        "popular_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "votes",
+          "value": 4033497.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 4.0
+        }
+      },
+      "terms": [
+        {
+          "end": "1881-03-04",
+          "number": 19,
+          "start": "1877-03-04"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 49,
+      "domain": "presidents",
+      "id": "president:james-a-garfield",
+      "name": "James A. Garfield",
+      "party": "Republican",
+      "presidencyNumbers": [
+        20
+      ],
+      "sourceCoverage": {
+        "approval": false,
+        "elections": true,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 49
+        },
+        "best_electoral_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 58.0
+        },
+        "best_popular_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 48.3
+        },
+        "election_wins": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "wins",
+          "value": 1
+        },
+        "electoral_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "electoral votes",
+          "value": 214.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 10.91
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 6.0
+        },
+        "popular_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "votes",
+          "value": 4453611.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 0.55
+        }
+      },
+      "terms": [
+        {
+          "end": "1881-09-19",
+          "number": 20,
+          "start": "1881-03-04"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 51,
+      "domain": "presidents",
+      "id": "president:chester-a-arthur",
+      "name": "Chester A. Arthur",
+      "party": "Republican",
+      "presidencyNumbers": [
+        21
+      ],
+      "sourceCoverage": {
+        "approval": false,
+        "elections": false,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 51
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 27.75
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 96.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 3.46
+        }
+      },
+      "terms": [
+        {
+          "end": "1885-03-04",
+          "number": 21,
+          "start": "1881-09-19"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 47,
+      "domain": "presidents",
+      "id": "president:grover-cleveland",
+      "name": "Grover Cleveland",
+      "party": "Democratic",
+      "presidencyNumbers": [
+        22,
+        24
+      ],
+      "sourceCoverage": {
+        "approval": false,
+        "elections": true,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 47
+        },
+        "best_electoral_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 62.4
+        },
+        "best_popular_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 48.9
+        },
+        "election_wins": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "wins",
+          "value": 2
+        },
+        "electoral_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "electoral votes",
+          "value": 496.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 31.62
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 253.0
+        },
+        "popular_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "votes",
+          "value": 10470203.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 8.0
+        }
+      },
+      "terms": [
+        {
+          "end": "1889-03-04",
+          "number": 22,
+          "start": "1885-03-04"
+        },
+        {
+          "end": "1897-03-04",
+          "number": 24,
+          "start": "1893-03-04"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 55,
+      "domain": "presidents",
+      "id": "president:benjamin-harrison",
+      "name": "Benjamin Harrison",
+      "party": "Republican",
+      "presidencyNumbers": [
+        23
+      ],
+      "sourceCoverage": {
+        "approval": false,
+        "elections": true,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 55
+        },
+        "best_electoral_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 58.1
+        },
+        "best_popular_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 47.8
+        },
+        "election_wins": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "wins",
+          "value": 1
+        },
+        "electoral_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "electoral votes",
+          "value": 233.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 35.75
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 143.0
+        },
+        "popular_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "votes",
+          "value": 5449825.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 4.0
+        }
+      },
+      "terms": [
+        {
+          "end": "1893-03-04",
+          "number": 23,
+          "start": "1889-03-04"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 54,
+      "domain": "presidents",
+      "id": "president:william-mckinley",
+      "name": "William McKinley",
+      "party": "Republican",
+      "presidencyNumbers": [
+        25
+      ],
+      "sourceCoverage": {
+        "approval": false,
+        "elections": true,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 54
+        },
+        "best_electoral_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 65.3
+        },
+        "best_popular_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 51.7
+        },
+        "election_wins": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "wins",
+          "value": 2
+        },
+        "electoral_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "electoral votes",
+          "value": 563.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 40.84
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 185.0
+        },
+        "popular_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "votes",
+          "value": 14324269.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 4.53
+        }
+      },
+      "terms": [
+        {
+          "end": "1901-09-14",
+          "number": 25,
+          "start": "1897-03-04"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 42,
+      "domain": "presidents",
+      "id": "president:theodore-roosevelt",
+      "name": "Theodore Roosevelt",
+      "party": "Republican",
+      "presidencyNumbers": [
+        26
+      ],
+      "sourceCoverage": {
+        "approval": false,
+        "elections": true,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 42
+        },
+        "best_electoral_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 70.6
+        },
+        "best_popular_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 56.4
+        },
+        "election_wins": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "wins",
+          "value": 1
+        },
+        "electoral_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "electoral votes",
+          "value": 336.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 144.71
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 1081.0
+        },
+        "popular_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "votes",
+          "value": 7625599.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 7.47
+        }
+      },
+      "terms": [
+        {
+          "end": "1909-03-04",
+          "number": 26,
+          "start": "1901-09-14"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 51,
+      "domain": "presidents",
+      "id": "president:william-howard-taft",
+      "name": "William Howard Taft",
+      "party": "Republican",
+      "presidencyNumbers": [
+        27
+      ],
+      "sourceCoverage": {
+        "approval": false,
+        "elections": true,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 51
+        },
+        "best_electoral_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 66.5
+        },
+        "best_popular_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 51.6
+        },
+        "election_wins": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "wins",
+          "value": 1
+        },
+        "electoral_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "electoral votes",
+          "value": 321.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 181.0
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 724.0
+        },
+        "popular_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "votes",
+          "value": 7676598.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 4.0
+        }
+      },
+      "terms": [
+        {
+          "end": "1913-03-04",
+          "number": 27,
+          "start": "1909-03-04"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 56,
+      "domain": "presidents",
+      "id": "president:woodrow-wilson",
+      "name": "Woodrow Wilson",
+      "party": "Democratic",
+      "presidencyNumbers": [
+        28
+      ],
+      "sourceCoverage": {
+        "approval": false,
+        "elections": true,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 56
+        },
+        "best_electoral_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 81.9
+        },
+        "best_popular_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 49.2
+        },
+        "election_wins": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "wins",
+          "value": 2
+        },
+        "electoral_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "electoral votes",
+          "value": 712.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 225.38
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 1803.0
+        },
+        "popular_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "votes",
+          "value": 15420390.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 8.0
+        }
+      },
+      "terms": [
+        {
+          "end": "1921-03-04",
+          "number": 28,
+          "start": "1913-03-04"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 55,
+      "domain": "presidents",
+      "id": "president:warren-g-harding",
+      "name": "Warren G. Harding",
+      "party": "Republican",
+      "presidencyNumbers": [
+        29
+      ],
+      "sourceCoverage": {
+        "approval": false,
+        "elections": true,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 55
+        },
+        "best_electoral_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 76.1
+        },
+        "best_popular_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 60.3
+        },
+        "election_wins": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "wins",
+          "value": 1
+        },
+        "electoral_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "electoral votes",
+          "value": 404.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 216.6
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 522.0
+        },
+        "popular_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "votes",
+          "value": 16151916.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 2.41
+        }
+      },
+      "terms": [
+        {
+          "end": "1923-08-02",
+          "number": 29,
+          "start": "1921-03-04"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 51,
+      "domain": "presidents",
+      "id": "president:calvin-coolidge",
+      "name": "Calvin Coolidge",
+      "party": "Republican",
+      "presidencyNumbers": [
+        30
+      ],
+      "sourceCoverage": {
+        "approval": false,
+        "elections": true,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 51
+        },
+        "best_electoral_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 71.9
+        },
+        "best_popular_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 54.0
+        },
+        "election_wins": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "wins",
+          "value": 1
+        },
+        "electoral_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "electoral votes",
+          "value": 382.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 215.21
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 1203.0
+        },
+        "popular_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "votes",
+          "value": 15724310.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 5.59
+        }
+      },
+      "terms": [
+        {
+          "end": "1929-03-04",
+          "number": 30,
+          "start": "1923-08-02"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 54,
+      "domain": "presidents",
+      "id": "president:herbert-hoover",
+      "name": "Herbert Hoover",
+      "party": "Republican",
+      "presidencyNumbers": [
+        31
+      ],
+      "sourceCoverage": {
+        "approval": false,
+        "elections": true,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 54
+        },
+        "best_electoral_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 83.6
+        },
+        "best_popular_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 58.2
+        },
+        "election_wins": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "wins",
+          "value": 1
+        },
+        "electoral_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "electoral votes",
+          "value": 444.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 250.75
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 1003.0
+        },
+        "popular_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "votes",
+          "value": 21432823.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 4.0
+        }
+      },
+      "terms": [
+        {
+          "end": "1933-03-04",
+          "number": 31,
+          "start": "1929-03-04"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 51,
+      "domain": "presidents",
+      "id": "president:franklin-d-roosevelt",
+      "name": "Franklin D. Roosevelt",
+      "party": "Democratic",
+      "presidencyNumbers": [
+        32
+      ],
+      "sourceCoverage": {
+        "approval": false,
+        "elections": true,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 51
+        },
+        "best_electoral_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 98.5
+        },
+        "best_popular_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 60.8
+        },
+        "election_wins": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "wins",
+          "value": 4
+        },
+        "electoral_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "electoral votes",
+          "value": 1876.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 307.43
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 3726.0
+        },
+        "popular_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "votes",
+          "value": 103425434.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 12.12
+        }
+      },
+      "terms": [
+        {
+          "end": "1945-04-12",
+          "number": 32,
+          "start": "1933-03-04"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 60,
+      "domain": "presidents",
+      "id": "president:harry-s-truman",
+      "name": "Harry S. Truman",
+      "party": "Democratic",
+      "presidencyNumbers": [
+        33
+      ],
+      "sourceCoverage": {
+        "approval": true,
+        "elections": true,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 60
+        },
+        "approval_average": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 72.3
+        },
+        "approval_final": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 65.0
+        },
+        "approval_high": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 83.0
+        },
+        "approval_low": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 65.0
+        },
+        "approval_margin_final": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "points",
+          "value": 42.0
+        },
+        "approval_volatility": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "points",
+          "value": 18.0
+        },
+        "best_electoral_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 57.1
+        },
+        "best_popular_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 49.5
+        },
+        "disapproval_high": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 26.0
+        },
+        "election_wins": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "wins",
+          "value": 1
+        },
+        "electoral_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "electoral votes",
+          "value": 303.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 116.58
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 907.0
+        },
+        "popular_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "votes",
+          "value": 24105810.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 7.78
+        }
+      },
+      "terms": [
+        {
+          "end": "1953-01-20",
+          "number": 33,
+          "start": "1945-04-12"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 62,
+      "domain": "presidents",
+      "id": "president:dwight-d-eisenhower",
+      "name": "Dwight D. Eisenhower",
+      "party": "Republican",
+      "presidencyNumbers": [
+        34
+      ],
+      "sourceCoverage": {
+        "approval": true,
+        "elections": true,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 62
+        },
+        "approval_average": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 42.0
+        },
+        "approval_final": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 32.0
+        },
+        "approval_high": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 87.0
+        },
+        "approval_low": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 22.0
+        },
+        "approval_margin_final": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "points",
+          "value": -24.0
+        },
+        "approval_volatility": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "points",
+          "value": 65.0
+        },
+        "best_electoral_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 86.1
+        },
+        "best_popular_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 57.4
+        },
+        "disapproval_high": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 67.0
+        },
+        "election_wins": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "wins",
+          "value": 2
+        },
+        "electoral_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "electoral votes",
+          "value": 899.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 60.5
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 484.0
+        },
+        "popular_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "votes",
+          "value": 69368417.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 8.0
+        }
+      },
+      "terms": [
+        {
+          "end": "1961-01-20",
+          "number": 34,
+          "start": "1953-01-20"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 43,
+      "domain": "presidents",
+      "id": "president:john-f-kennedy",
+      "name": "John F. Kennedy",
+      "party": "Democratic",
+      "presidencyNumbers": [
+        35
+      ],
+      "sourceCoverage": {
+        "approval": true,
+        "elections": true,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 43
+        },
+        "approval_average": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 64.87
+        },
+        "approval_final": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 59.0
+        },
+        "approval_high": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 79.0
+        },
+        "approval_low": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 48.0
+        },
+        "approval_margin_final": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "points",
+          "value": 31.0
+        },
+        "approval_volatility": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "points",
+          "value": 31.0
+        },
+        "best_electoral_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 56.4
+        },
+        "best_popular_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 49.7
+        },
+        "disapproval_high": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 36.0
+        },
+        "election_wins": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "wins",
+          "value": 1
+        },
+        "electoral_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "electoral votes",
+          "value": 303.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 75.35
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 214.0
+        },
+        "popular_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "votes",
+          "value": 34226731.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 2.84
+        }
+      },
+      "terms": [
+        {
+          "end": "1963-11-22",
+          "number": 35,
+          "start": "1961-01-20"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 55,
+      "domain": "presidents",
+      "id": "president:lyndon-b-johnson",
+      "name": "Lyndon B. Johnson",
+      "party": "Democratic",
+      "presidencyNumbers": [
+        36
+      ],
+      "sourceCoverage": {
+        "approval": true,
+        "elections": true,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 55
+        },
+        "approval_average": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 70.65
+        },
+        "approval_final": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 58.0
+        },
+        "approval_high": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 82.0
+        },
+        "approval_low": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 56.0
+        },
+        "approval_margin_final": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "points",
+          "value": 28.0
+        },
+        "approval_volatility": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "points",
+          "value": 26.0
+        },
+        "best_electoral_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 90.3
+        },
+        "best_popular_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 61.1
+        },
+        "disapproval_high": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 30.0
+        },
+        "election_wins": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "wins",
+          "value": 1
+        },
+        "electoral_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "electoral votes",
+          "value": 486.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 62.86
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 325.0
+        },
+        "popular_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "votes",
+          "value": 43129566.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 5.17
+        }
+      },
+      "terms": [
+        {
+          "end": "1969-01-20",
+          "number": 36,
+          "start": "1963-11-22"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 56,
+      "domain": "presidents",
+      "id": "president:richard-nixon",
+      "name": "Richard Nixon",
+      "party": "Republican",
+      "presidencyNumbers": [
+        37
+      ],
+      "sourceCoverage": {
+        "approval": true,
+        "elections": true,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 56
+        },
+        "approval_average": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 55.95
+        },
+        "approval_final": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 49.0
+        },
+        "approval_high": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 79.0
+        },
+        "approval_low": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 35.0
+        },
+        "approval_margin_final": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "points",
+          "value": 12.0
+        },
+        "approval_volatility": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "points",
+          "value": 44.0
+        },
+        "best_electoral_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 55.9
+        },
+        "best_popular_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 43.4
+        },
+        "disapproval_high": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 52.0
+        },
+        "election_wins": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "wins",
+          "value": 1
+        },
+        "electoral_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "electoral votes",
+          "value": 301.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 62.34
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 346.0
+        },
+        "popular_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "votes",
+          "value": 31785480.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 5.55
+        }
+      },
+      "terms": [
+        {
+          "end": "1974-08-09",
+          "number": 37,
+          "start": "1969-01-20"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 61,
+      "domain": "presidents",
+      "id": "president:gerald-ford",
+      "name": "Gerald Ford",
+      "party": "Republican",
+      "presidencyNumbers": [
+        38
+      ],
+      "sourceCoverage": {
+        "approval": true,
+        "elections": false,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 61
+        },
+        "approval_average": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 48.03
+        },
+        "approval_final": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 24.0
+        },
+        "approval_high": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 67.0
+        },
+        "approval_low": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 24.0
+        },
+        "approval_margin_final": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "points",
+          "value": -42.0
+        },
+        "approval_volatility": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "points",
+          "value": 43.0
+        },
+        "disapproval_high": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 66.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 68.98
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 169.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 2.45
+        }
+      },
+      "terms": [
+        {
+          "end": "1977-01-20",
+          "number": 38,
+          "start": "1974-08-09"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 52,
+      "domain": "presidents",
+      "id": "president:jimmy-carter",
+      "name": "Jimmy Carter",
+      "party": "Democratic",
+      "presidencyNumbers": [
+        39
+      ],
+      "sourceCoverage": {
+        "approval": true,
+        "elections": true,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 52
+        },
+        "approval_average": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 46.5
+        },
+        "approval_final": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 53.0
+        },
+        "approval_high": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 71.0
+        },
+        "approval_low": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 37.0
+        },
+        "approval_margin_final": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "points",
+          "value": 21.0
+        },
+        "approval_volatility": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "points",
+          "value": 34.0
+        },
+        "best_electoral_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 55.2
+        },
+        "best_popular_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 50.1
+        },
+        "disapproval_high": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 46.0
+        },
+        "election_wins": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "wins",
+          "value": 1
+        },
+        "electoral_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "electoral votes",
+          "value": 297.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 80.0
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 320.0
+        },
+        "popular_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "votes",
+          "value": 40830763.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 4.0
+        }
+      },
+      "terms": [
+        {
+          "end": "1981-01-20",
+          "number": 39,
+          "start": "1977-01-20"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 69,
+      "domain": "presidents",
+      "id": "president:ronald-reagan",
+      "name": "Ronald Reagan",
+      "party": "Republican",
+      "presidencyNumbers": [
+        40
+      ],
+      "sourceCoverage": {
+        "approval": true,
+        "elections": true,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 69
+        },
+        "approval_average": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 46.69
+        },
+        "approval_final": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 34.0
+        },
+        "approval_high": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 75.0
+        },
+        "approval_low": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 28.0
+        },
+        "approval_margin_final": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "points",
+          "value": -21.0
+        },
+        "approval_volatility": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "points",
+          "value": 47.0
+        },
+        "best_electoral_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 97.6
+        },
+        "best_popular_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 58.8
+        },
+        "disapproval_high": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 59.0
+        },
+        "election_wins": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "wins",
+          "value": 2
+        },
+        "electoral_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "electoral votes",
+          "value": 1014.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 47.62
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 381.0
+        },
+        "popular_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "votes",
+          "value": 98359228.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 8.0
+        }
+      },
+      "terms": [
+        {
+          "end": "1989-01-20",
+          "number": 40,
+          "start": "1981-01-20"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 64,
+      "domain": "presidents",
+      "id": "president:george-h-w-bush",
+      "name": "George H. W. Bush",
+      "party": "Republican",
+      "presidencyNumbers": [
+        41
+      ],
+      "sourceCoverage": {
+        "approval": true,
+        "elections": true,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 64
+        },
+        "approval_average": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 52.24
+        },
+        "approval_final": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 63.0
+        },
+        "approval_high": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 68.0
+        },
+        "approval_low": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 35.0
+        },
+        "approval_margin_final": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "points",
+          "value": 34.0
+        },
+        "approval_volatility": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "points",
+          "value": 33.0
+        },
+        "best_electoral_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 79.2
+        },
+        "best_popular_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 53.4
+        },
+        "disapproval_high": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 56.0
+        },
+        "election_wins": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "wins",
+          "value": 1
+        },
+        "electoral_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "electoral votes",
+          "value": 426.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 41.5
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 166.0
+        },
+        "popular_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "votes",
+          "value": 48886097.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 4.0
+        }
+      },
+      "terms": [
+        {
+          "end": "1993-01-20",
+          "number": 41,
+          "start": "1989-01-20"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 46,
+      "domain": "presidents",
+      "id": "president:bill-clinton",
+      "name": "Bill Clinton",
+      "party": "Democratic",
+      "presidencyNumbers": [
+        42
+      ],
+      "sourceCoverage": {
+        "approval": true,
+        "elections": true,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 46
+        },
+        "approval_average": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 61.42
+        },
+        "approval_final": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 56.0
+        },
+        "approval_high": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 89.0
+        },
+        "approval_low": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 29.0
+        },
+        "approval_margin_final": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "points",
+          "value": 19.0
+        },
+        "approval_volatility": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "points",
+          "value": 60.0
+        },
+        "best_electoral_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 70.4
+        },
+        "best_popular_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 49.2
+        },
+        "disapproval_high": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 60.0
+        },
+        "election_wins": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "wins",
+          "value": 2
+        },
+        "electoral_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "electoral votes",
+          "value": 749.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 45.5
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 364.0
+        },
+        "popular_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "votes",
+          "value": 92311683.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 8.0
+        }
+      },
+      "terms": [
+        {
+          "end": "2001-01-20",
+          "number": 42,
+          "start": "1993-01-20"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 54,
+      "domain": "presidents",
+      "id": "president:george-w-bush",
+      "name": "George W. Bush",
+      "party": "Republican",
+      "presidencyNumbers": [
+        43
+      ],
+      "sourceCoverage": {
+        "approval": true,
+        "elections": true,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 54
+        },
+        "approval_average": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 55.49
+        },
+        "approval_final": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 66.0
+        },
+        "approval_high": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 73.0
+        },
+        "approval_low": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 37.0
+        },
+        "approval_margin_final": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "points",
+          "value": 37.0
+        },
+        "approval_volatility": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "points",
+          "value": 36.0
+        },
+        "best_electoral_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 53.2
+        },
+        "best_popular_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 50.7
+        },
+        "disapproval_high": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 54.0
+        },
+        "election_wins": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "wins",
+          "value": 2
+        },
+        "electoral_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "electoral votes",
+          "value": 557.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 36.38
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 291.0
+        },
+        "popular_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "votes",
+          "value": 112495766.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 8.0
+        }
+      },
+      "terms": [
+        {
+          "end": "2009-01-20",
+          "number": 43,
+          "start": "2001-01-20"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 47,
+      "domain": "presidents",
+      "id": "president:barack-obama",
+      "name": "Barack Obama",
+      "party": "Democratic",
+      "presidencyNumbers": [
+        44
+      ],
+      "sourceCoverage": {
+        "approval": true,
+        "elections": true,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 47
+        },
+        "approval_average": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 51.35
+        },
+        "approval_final": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 34.0
+        },
+        "approval_high": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 90.0
+        },
+        "approval_low": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 25.0
+        },
+        "approval_margin_final": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "points",
+          "value": -27.0
+        },
+        "approval_volatility": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "points",
+          "value": 65.0
+        },
+        "best_electoral_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 67.8
+        },
+        "best_popular_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 52.9
+        },
+        "disapproval_high": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 71.0
+        },
+        "election_wins": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "wins",
+          "value": 2
+        },
+        "electoral_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "electoral votes",
+          "value": 697.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 34.5
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 276.0
+        },
+        "popular_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "votes",
+          "value": 135356557.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 8.0
+        }
+      },
+      "terms": [
+        {
+          "end": "2017-01-20",
+          "number": 44,
+          "start": "2009-01-20"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 70,
+      "domain": "presidents",
+      "id": "president:donald-trump",
+      "name": "Donald Trump",
+      "party": "Republican",
+      "presidencyNumbers": [
+        45,
+        47
+      ],
+      "sourceCoverage": {
+        "approval": true,
+        "elections": true,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 70
+        },
+        "approval_average": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 40.38
+        },
+        "approval_final": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 34.0
+        },
+        "approval_high": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 49.0
+        },
+        "approval_low": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 34.0
+        },
+        "approval_margin_final": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "points",
+          "value": -28.0
+        },
+        "approval_volatility": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "points",
+          "value": 15.0
+        },
+        "best_electoral_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 58.0
+        },
+        "best_popular_vote_pct": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "%",
+          "value": 49.81
+        },
+        "disapproval_high": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 62.0
+        },
+        "election_wins": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "wins",
+          "value": 3
+        },
+        "electoral_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "electoral votes",
+          "value": 850.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 89.48
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 485.0
+        },
+        "popular_votes_total": {
+          "source": {
+            "name": "The American Presidency Project Elections",
+            "url": "https://www.presidency.ucsb.edu/statistics/elections"
+          },
+          "unit": "votes",
+          "value": 214475636.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 5.42
+        }
+      },
+      "terms": [
+        {
+          "end": "2021-01-20",
+          "number": 45,
+          "start": "2017-01-20"
+        },
+        {
+          "end": null,
+          "number": 47,
+          "start": "2025-01-20"
+        }
+      ]
+    },
+    {
+      "ageAtFirstInauguration": 78,
+      "domain": "presidents",
+      "id": "president:joe-biden",
+      "name": "Joe Biden",
+      "party": "Democratic",
+      "presidencyNumbers": [
+        46
+      ],
+      "sourceCoverage": {
+        "approval": true,
+        "elections": false,
+        "executiveOrders": true
+      },
+      "stats": {
+        "age_at_first_inauguration": {
+          "source": {
+            "name": "White House / historical presidential records",
+            "url": "https://www.whitehouse.gov/about-the-white-house/presidents/"
+          },
+          "unit": "years",
+          "value": 78
+        },
+        "approval_average": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 49.46
+        },
+        "approval_final": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 40.0
+        },
+        "approval_high": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 57.0
+        },
+        "approval_low": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 40.0
+        },
+        "approval_margin_final": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "points",
+          "value": -16.0
+        },
+        "approval_volatility": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "points",
+          "value": 17.0
+        },
+        "disapproval_high": {
+          "source": {
+            "name": "The American Presidency Project / Gallup approval sheets",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval"
+          },
+          "unit": "%",
+          "value": 56.0
+        },
+        "executive_orders_avg_per_year": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders/year",
+          "value": 40.5
+        },
+        "executive_orders_total": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "orders",
+          "value": 162.0
+        },
+        "years_in_office_app": {
+          "source": {
+            "name": "The American Presidency Project Executive Orders",
+            "url": "https://www.presidency.ucsb.edu/statistics/data/executive-orders"
+          },
+          "unit": "years",
+          "value": 4.0
+        }
+      },
+      "terms": [
+        {
+          "end": "2025-01-20",
+          "number": 46,
+          "start": "2021-01-20"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "domain": "presidents",
+    "generatedAt": "2026-06-22T17:27:18.488666+00:00",
+    "items": 45,
+    "missingSourceCoverage": [
+      [
+        "approval",
+        31
+      ],
+      [
+        "elections",
+        9
+      ]
+    ],
+    "notes": [
+      "Grover Cleveland and Donald Trump are single people records with multiple presidency numbers.",
+      "Approval stats cover only presidents present in APP's Gallup approval workbook.",
+      "Trump second-term executive-order totals are current through APP's June 20, 2026 table snapshot."
+    ],
+    "source": "American Presidency Project plus static president identity table",
+    "statKeys": [
+      "age_at_first_inauguration",
+      "approval_average",
+      "approval_final",
+      "approval_high",
+      "approval_low",
+      "approval_margin_final",
+      "approval_volatility",
+      "best_electoral_vote_pct",
+      "best_popular_vote_pct",
+      "disapproval_high",
+      "election_wins",
+      "electoral_votes_total",
+      "executive_orders_avg_per_year",
+      "executive_orders_total",
+      "popular_votes_total",
+      "years_in_office_app"
+    ]
+  }
+}

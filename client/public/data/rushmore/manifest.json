@@ -1,0 +1,250 @@
+{
+  "datasets": [
+    {
+      "comprehensiveSourceBackedRecords": 155623,
+      "defaultPlayableRecords": 58896,
+      "domain": "beverages",
+      "file": "/data/rushmore/beverages.playable.json",
+      "id": "beverages-usda-fdc-2026-04-30",
+      "normalization": "Nutrients are USDA amounts per 100 ml; per-12-fl-oz values are scaled to 354.882 ml.",
+      "notes": [
+        "Full generated audit derivative is written to ignored data/generated/rushmore/.",
+        "defaultPlayable excludes records with quality flags and categories unsuitable for clean default prompts.",
+        "For classic soda prompts, filter category == Soda before scoring."
+      ],
+      "records": 75076,
+      "sampleOptimalDefaultFours": {
+        "all_default_caffeine_mg_per_12_fl_oz": [
+          {
+            "brand": "BLACKEYE ROASTING CO",
+            "category": "Other Drinks",
+            "name": "COLD BREW COFFEE",
+            "unit": "mg",
+            "value": 319.3938
+          },
+          {
+            "brand": "Topo-Logic Systems, Inc.",
+            "category": "Other Drinks",
+            "name": "COLD BREW COFFEE",
+            "unit": "mg",
+            "value": 319.3938
+          },
+          {
+            "brand": "BLACKEYE ROASTING CO.",
+            "category": "Other Drinks",
+            "name": "NITRO COLD BREW WATER+COFFEE",
+            "unit": "mg",
+            "value": 251.9662
+          },
+          {
+            "brand": "Dyla LLC",
+            "category": "Other Drinks",
+            "name": "VANILLA LATTE ORGANIC ENERGY COFFEE, VANILLA LATTE",
+            "unit": "mg",
+            "value": 220.0268
+          }
+        ],
+        "all_default_calories_per_12_fl_oz": [
+          {
+            "brand": "RALEY'S",
+            "category": "Fruit & Vegetable Juice, Nectars & Fruit Drinks",
+            "name": "FRUIT JUICE, GRAPE",
+            "unit": "kcal",
+            "value": 525.2254
+          },
+          {
+            "brand": "HEALTHY ACCENTS",
+            "category": "Other Drinks",
+            "name": "NUTRITION SHAKE PLUS, CHOCOLATE",
+            "unit": "kcal",
+            "value": 518.1277
+          },
+          {
+            "brand": "HEALTHY ACCENTS",
+            "category": "Other Drinks",
+            "name": "NUTRITIONAL SHAKE PLUS 24 ESSENTIAL VITAMINS & MINERALS, VANILLA",
+            "unit": "kcal",
+            "value": 518.1277
+          },
+          {
+            "brand": "RITE AID",
+            "category": "Other Drinks",
+            "name": "VANILLA PLUS NUTRITION SHAKE, VANILLA",
+            "unit": "kcal",
+            "value": 518.1277
+          }
+        ],
+        "soda_sugar_g_per_12_fl_oz": [
+          {
+            "brand": "LEROY'S LIPSMACK'N LEMONADE",
+            "category": "Soda",
+            "name": "LEMONADE",
+            "unit": "g",
+            "value": 76.3706
+          },
+          {
+            "brand": "GATORADE",
+            "category": "Soda",
+            "name": "BERRY FLAVORED CARB ENERGY DRINK, BERRY",
+            "unit": "g",
+            "value": 75.1995
+          },
+          {
+            "brand": "The Quaker Oats Co./gatorade-Van Camp",
+            "category": "Soda",
+            "name": "BERRY CARB ENERGY DRINK, BERRY",
+            "unit": "g",
+            "value": 75.1995
+          },
+          {
+            "brand": "The Quaker Oats Co./gatorade-Van Camp",
+            "category": "Soda",
+            "name": "BERRY FLAVORED CARB ENERGY DRINK, BERRY",
+            "unit": "g",
+            "value": 75.1995
+          }
+        ]
+      },
+      "source": "USDA FoodData Central Branded Foods April 2026 CSV",
+      "sourceUrl": "https://fdc.nal.usda.gov/download-datasets/",
+      "statKeys": [
+        "caffeine_mg_per_100_ml",
+        "caffeine_mg_per_12_fl_oz",
+        "calories_per_100_ml",
+        "calories_per_12_fl_oz",
+        "sodium_mg_per_100_ml",
+        "sodium_mg_per_12_fl_oz",
+        "sugar_g_per_100_ml",
+        "sugar_g_per_12_fl_oz"
+      ]
+    },
+    {
+      "coverageNotes": [
+        "Grover Cleveland and Donald Trump are single people records with multiple presidency numbers.",
+        "Approval stats cover only presidents present in APP's Gallup approval workbook.",
+        "Trump second-term executive-order totals are current through APP's June 20, 2026 table snapshot."
+      ],
+      "domain": "presidents",
+      "file": "/data/rushmore/presidents.app-2026-06-22.json",
+      "id": "presidents-app-2026-06-22",
+      "records": 45,
+      "sampleOptimalFours": {
+        "approval_high": [
+          {
+            "brand": null,
+            "category": null,
+            "name": "Barack Obama",
+            "unit": "%",
+            "value": 90.0
+          },
+          {
+            "brand": null,
+            "category": null,
+            "name": "Bill Clinton",
+            "unit": "%",
+            "value": 89.0
+          },
+          {
+            "brand": null,
+            "category": null,
+            "name": "Dwight D. Eisenhower",
+            "unit": "%",
+            "value": 87.0
+          },
+          {
+            "brand": null,
+            "category": null,
+            "name": "Harry S. Truman",
+            "unit": "%",
+            "value": 83.0
+          }
+        ],
+        "best_electoral_vote_pct": [
+          {
+            "brand": null,
+            "category": null,
+            "name": "George Washington",
+            "unit": "%",
+            "value": 100.0
+          },
+          {
+            "brand": null,
+            "category": null,
+            "name": "Franklin D. Roosevelt",
+            "unit": "%",
+            "value": 98.5
+          },
+          {
+            "brand": null,
+            "category": null,
+            "name": "Ronald Reagan",
+            "unit": "%",
+            "value": 97.6
+          },
+          {
+            "brand": null,
+            "category": null,
+            "name": "Abraham Lincoln",
+            "unit": "%",
+            "value": 90.6
+          }
+        ],
+        "executive_orders_total": [
+          {
+            "brand": null,
+            "category": null,
+            "name": "Franklin D. Roosevelt",
+            "unit": "orders",
+            "value": 3726.0
+          },
+          {
+            "brand": null,
+            "category": null,
+            "name": "Woodrow Wilson",
+            "unit": "orders",
+            "value": 1803.0
+          },
+          {
+            "brand": null,
+            "category": null,
+            "name": "Calvin Coolidge",
+            "unit": "orders",
+            "value": 1203.0
+          },
+          {
+            "brand": null,
+            "category": null,
+            "name": "Theodore Roosevelt",
+            "unit": "orders",
+            "value": 1081.0
+          }
+        ]
+      },
+      "source": "American Presidency Project plus static president identity table",
+      "sourceUrls": [
+        "https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval",
+        "https://www.presidency.ucsb.edu/statistics/data/executive-orders",
+        "https://www.presidency.ucsb.edu/statistics/elections"
+      ],
+      "statKeys": [
+        "age_at_first_inauguration",
+        "approval_average",
+        "approval_final",
+        "approval_high",
+        "approval_low",
+        "approval_margin_final",
+        "approval_volatility",
+        "best_electoral_vote_pct",
+        "best_popular_vote_pct",
+        "disapproval_high",
+        "election_wins",
+        "electoral_votes_total",
+        "executive_orders_avg_per_year",
+        "executive_orders_total",
+        "popular_votes_total",
+        "years_in_office_app"
+      ]
+    }
+  ],
+  "generatedAt": "2026-06-22T17:34:09Z"
+}
