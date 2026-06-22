@@ -1,0 +1,2349 @@
+/* =====================================================================
+   Music Visualizer / Light Table Deck theme
+   ---------------------------------------------------------------------
+   The active theme is set on <html data-theme="audius"> from App.tsx.
+   This theme reframes the app as a backlit music instrument: a compact
+   transport deck feeds the board, side meters flank the light table,
+   and the hand tray becomes a playable keybed.
+   ===================================================================== */
+
+:root[data-theme="audius"] {
+  --audius-shell: #040309;
+  --audius-glass: #080b12;
+  --audius-glass-deep: #030107;
+  --audius-ink: #d7fff7;
+  --audius-muted: #7ea8a2;
+  --audius-rail: #162e35;
+  --audius-amber: #c8732c;
+  --audius-bass: 0;
+  --audius-mid: 0;
+  --audius-treble: 0;
+  --audius-onset: 0;
+  --audius-intensity: 0.18;
+  --audius-breath: 0.18;
+  --audius-board-ambience: 0.18;
+  --audius-stage-scale: 1;
+  --audius-viz-hue: 188deg;
+  --audius-cube-hue-rotate: 0deg;
+  --audius-deck-hot: 0;
+  --audius-meter-bass: 0;
+  --audius-meter-mid: 0;
+  --audius-meter-treble: 0;
+  --audius-meter-onset: 0;
+  --audius-cube-top: #cffff2;
+  --audius-cube-left: #42d6bd;
+  --audius-cube-right: #115a67;
+  color: var(--audius-ink);
+}
+
+.hexaclear-audius-deck,
+.hexaclear-audius-title-card,
+.hexaclear-audius-vu {
+  display: none;
+}
+
+[data-theme="audius"] body,
+[data-theme="audius"] .cubic-viewport {
+  background:
+    radial-gradient(
+      circle at 50% -14%,
+      color-mix(in srgb, var(--audius-cube-top) 20%, transparent) 0%,
+      transparent 38%
+    ),
+    radial-gradient(circle at 50% 66%, #16101f 0%, #08050e 58%, #030106 100%);
+  color: var(--audius-ink);
+}
+
+[data-theme="audius"] .hexaclear-root {
+  width: min(100%, 860px);
+  max-width: min(860px, calc(100vw - 1rem));
+  padding: clamp(0.45rem, 1.1dvh, 0.7rem);
+  gap: clamp(0.42rem, 0.9dvh, 0.62rem);
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      color-mix(in srgb, var(--audius-cube-top) 10%, transparent),
+      transparent 30%
+    ),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.025), transparent 28%),
+    var(--audius-shell);
+  border: 1px solid color-mix(in srgb, var(--audius-cube-top) 16%, #242033);
+  border-radius: 1.4rem;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.055),
+    inset 0 -30px 70px rgba(0, 0, 0, 0.46),
+    0 0 22px color-mix(in srgb, var(--audius-cube-left) 14%, transparent),
+    0 24px 80px rgba(0, 0, 0, 0.7);
+}
+
+[data-theme="audius"] .hexaclear-header {
+  display: none;
+}
+
+[data-theme="audius"] .hexaclear-win98-lcds {
+  display: none;
+}
+
+[data-theme="audius"] .hexaclear-audius-deck {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas:
+    "brand utility"
+    "modes modes"
+    "readouts readouts";
+  align-items: center;
+  gap: 0.35rem;
+  flex: 0 0 auto;
+  padding: 0.32rem;
+  border: 1px solid color-mix(in srgb, var(--audius-cube-top) 22%, #30263b);
+  border-radius: 0.95rem;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.05), transparent 38%),
+    rgba(4, 3, 9, 0.9);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.055),
+    0 0 14px color-mix(in srgb, var(--audius-cube-left) 14%, transparent);
+}
+
+[data-theme="audius"] .hexaclear-audius-brand {
+  grid-area: brand;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  line-height: 1;
+  padding: 0.1rem 0;
+}
+
+[data-theme="audius"] .hexaclear-audius-brand-kicker,
+[data-theme="audius"] .readout-label,
+[data-theme="audius"] .track-label,
+[data-theme="audius"] .spectrum-state {
+  font-size: 0.55rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--audius-cube-top) 48%, var(--audius-muted));
+}
+
+[data-theme="audius"] .hexaclear-audius-brand-title {
+  font-family: 'Orbitron', 'Nunito', system-ui, sans-serif;
+  font-weight: 900;
+  font-size: clamp(1.6rem, 4.6dvh, 2.6rem);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  /* Orbitron's tracking adds trailing space after the last glyph; nudge
+     right so the wordmark stays optically centered under the kicker. */
+  text-indent: 0.22em;
+  color: color-mix(in srgb, var(--audius-cube-top) 88%, #fff5ca);
+  text-shadow:
+    0 0 1px rgba(255, 255, 255, 0.85),
+    0 0 12px color-mix(in srgb, var(--audius-cube-left) 60%, transparent),
+    0 0 26px color-mix(in srgb, var(--audius-cube-top) 30%, transparent);
+}
+
+[data-theme="audius"] .hexaclear-audius-mode-bank,
+[data-theme="audius"] .hexaclear-audius-transport-actions,
+[data-theme="audius"] .hexaclear-audius-utility-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+[data-theme="audius"] .hexaclear-audius-utility-row {
+  grid-area: utility;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.3rem;
+}
+
+[data-theme="audius"] .hexaclear-audius-mode-bank {
+  grid-area: modes;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+[data-theme="audius"] .hexaclear-audius-menu-button {
+  width: auto;
+}
+
+/* Give the Menu / History utility buttons real heft so they read as
+   siblings of the wide Endless/Daily/Multi mode bank rather than tiny
+   pills floating in the corner. They size up to a comfortable width and
+   share the space evenly when both are present. */
+[data-theme="audius"] .hexaclear-audius-utility-row .hexaclear-audius-menu-button,
+[data-theme="audius"] .hexaclear-audius-utility-row .hexaclear-audius-history-button {
+  flex: 1 1 0;
+  min-width: 8.5rem;
+}
+
+[data-theme="audius"] .hexaclear-audius-mode,
+[data-theme="audius"] .hexaclear-audius-menu-button,
+[data-theme="audius"] .hexaclear-audius-history-button,
+[data-theme="audius"] .hexaclear-audius-transport-button {
+  appearance: none;
+  border: 1px solid color-mix(in srgb, var(--audius-cube-top) 30%, #3a3347);
+  border-radius: 999px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.09), transparent),
+    rgba(5, 4, 11, 0.76);
+  color: color-mix(in srgb, var(--audius-cube-top) 66%, #f2d8a6);
+  font-family: inherit;
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.36rem 0.58rem;
+  min-height: 2rem;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.09),
+    0 0 8px color-mix(in srgb, var(--audius-cube-left) 18%, transparent);
+}
+
+[data-theme="audius"] .hexaclear-audius-mode.active,
+[data-theme="audius"] .hexaclear-audius-history-button.is-archive,
+[data-theme="audius"] .hexaclear-audius-transport-button.is-primary {
+  color: #061114;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.42), transparent 48%),
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--audius-cube-top) 76%, #f7de86),
+      color-mix(in srgb, var(--audius-cube-left) 64%, var(--audius-amber))
+    );
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.36),
+    0 0 16px color-mix(in srgb, var(--audius-cube-left) 28%, transparent);
+}
+
+[data-theme="audius"] .hexaclear-audius-transport-button:disabled {
+  opacity: 0.46;
+}
+
+[data-theme="audius"] .hexaclear-audius-readouts {
+  grid-area: readouts;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(4.5rem, 1fr));
+  gap: 0.24rem;
+  min-width: min(22rem, 34vw);
+}
+
+[data-theme="audius"] .hexaclear-audius-readout {
+  position: relative;
+  display: grid;
+  gap: 0.08rem;
+  padding: 0.28rem 0.45rem;
+  border: 1px solid color-mix(in srgb, var(--audius-cube-top) 18%, #2c2736);
+  border-radius: 0.72rem;
+  background:
+    radial-gradient(
+      circle at 50% 100%,
+      color-mix(in srgb, var(--audius-cube-left) 9%, transparent),
+      transparent 58%
+    ),
+    rgba(2, 2, 6, 0.68);
+  overflow: hidden;
+}
+
+[data-theme="audius"] .readout-value {
+  font-size: clamp(1rem, 2.5dvh, 1.38rem);
+  font-weight: 900;
+  line-height: 1;
+  color: color-mix(in srgb, var(--audius-cube-top) 78%, #fff5c8);
+  text-shadow:
+    0 0 6px color-mix(in srgb, var(--audius-cube-top) 55%, transparent),
+    0 0 14px color-mix(in srgb, var(--audius-cube-left) 28%, transparent);
+}
+
+[data-theme="audius"] .hexaclear-audius-transport {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: minmax(10rem, 1fr) minmax(6rem, 0.42fr) auto;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.42rem;
+  border-radius: 0.9rem;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.055), transparent 54%),
+    rgba(3, 3, 8, 0.66);
+}
+
+[data-theme="audius"] .hexaclear-audius-title-card {
+  position: absolute;
+  left: clamp(0.75rem, 2.4vw, 1.25rem);
+  bottom: clamp(0.75rem, 2.4vw, 1.25rem);
+  z-index: 8;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas:
+    "header"
+    "progress"
+    "actions";
+  align-items: start;
+  gap: 0.5rem;
+  width: min(23rem, 46%);
+  max-width: calc(100% - 1.5rem);
+  min-width: 0;
+  padding: 0.7rem 0.78rem 0.66rem;
+  border: 1px solid color-mix(in srgb, var(--audius-cube-top) 18%, transparent);
+  border-radius: 1rem;
+  background:
+    linear-gradient(90deg, rgba(3, 2, 7, 0.98), rgba(3, 2, 7, 0.94)),
+    radial-gradient(
+      circle at 18% 50%,
+      color-mix(in srgb, var(--audius-cube-left) 16%, transparent),
+      transparent 58%
+    );
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.055),
+    0 10px 26px rgba(0, 0, 0, 0.58),
+    0 0 18px color-mix(in srgb, var(--audius-cube-left) 16%, transparent);
+  pointer-events: auto;
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease,
+    width 180ms ease;
+}
+
+[data-theme="audius"] .hexaclear-audius-title-card::before {
+  content: '';
+  position: absolute;
+  left: 0.8rem;
+  right: 20%;
+  bottom: 0.42rem;
+  height: 2px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--audius-cube-top) 64%, transparent);
+  opacity: var(--audius-deck-hot);
+  pointer-events: none;
+}
+
+[data-theme="audius"] .hexaclear-audius-np-header {
+  grid-area: header;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+/* Album-art tile: the anchor of the card. Square thumbnail with a placeholder
+   disc when no art resolves, and the music-reactive EQ overlaid at its base. */
+[data-theme="audius"] .hexaclear-audius-artwork {
+  position: relative;
+  flex: none;
+  width: 3.4rem;
+  height: 3.4rem;
+  border-radius: 0.62rem;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  background:
+    linear-gradient(
+      150deg,
+      color-mix(in srgb, var(--audius-cube-left) 30%, #16121f),
+      color-mix(in srgb, var(--audius-cube-top) 12%, #07060d)
+    );
+  border: 1px solid color-mix(in srgb, var(--audius-cube-top) 24%, transparent);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+    0 4px 13px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="audius"] .hexaclear-audius-artwork img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+[data-theme="audius"] .hexaclear-audius-artwork-glyph {
+  width: 1.65rem;
+  height: 1.65rem;
+  fill: none;
+  stroke: color-mix(in srgb, var(--audius-cube-top) 58%, #fff6d0);
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.82;
+}
+
+[data-theme="audius"] .hexaclear-audius-np-eq {
+  position: absolute;
+  inset: auto 0 0 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0.16rem;
+  height: 54%;
+  padding: 0.2rem 0.24rem;
+  background: linear-gradient(to top, rgba(2, 2, 7, 0.82), transparent);
+  opacity: 0;
+  transition: opacity 220ms ease;
+  pointer-events: none;
+}
+
+[data-theme="audius"] .hexaclear-audius-title-card.is-playing .hexaclear-audius-np-eq {
+  opacity: 1;
+}
+
+[data-theme="audius"] .hexaclear-audius-np-eq .spectrum-bar {
+  width: 0.24rem;
+  height: 100%;
+  border-radius: 999px;
+  transform-origin: bottom center;
+}
+
+[data-theme="audius"] .hexaclear-audius-title-copy {
+  min-width: 0;
+  flex: 1 1 auto;
+  display: grid;
+  gap: 0.13rem;
+}
+
+[data-theme="audius"] .hexaclear-audius-title-copy .track-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.36rem;
+}
+
+/* Live indicator next to "Now playing": dim/static at rest, breathing when
+   audio is actually playing (a real-time "is it on?" cue). */
+[data-theme="audius"] .hexaclear-audius-np-dot {
+  flex: none;
+  width: 0.42rem;
+  height: 0.42rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--audius-cube-top) 38%, #5b5560);
+}
+
+[data-theme="audius"] .hexaclear-audius-title-card.is-playing .hexaclear-audius-np-dot {
+  background: color-mix(in srgb, var(--audius-cube-top) 86%, #fff6d0);
+  box-shadow: 0 0 7px color-mix(in srgb, var(--audius-cube-top) 64%, transparent);
+  animation: hexaclear-audius-np-dot-pulse 1.7s ease-in-out infinite;
+}
+
+@keyframes hexaclear-audius-np-dot-pulse {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+[data-theme="audius"] .hexaclear-audius-title-toggle {
+  flex: none;
+  align-self: flex-start;
+  display: grid;
+  place-items: center;
+  width: 1.7rem;
+  height: 1.7rem;
+  padding: 0;
+  appearance: none;
+  border: 1px solid color-mix(in srgb, var(--audius-cube-top) 18%, transparent);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  color: color-mix(in srgb, var(--audius-cube-top) 64%, #ffffff);
+  cursor: pointer;
+}
+
+[data-theme="audius"] .hexaclear-audius-title-toggle svg {
+  width: 1rem;
+  height: 1rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform 180ms ease;
+}
+
+/* Collapsed = a compact "now playing" chip: just the mini album art (still
+   showing the live EQ if a track is playing) plus the chevron to re-expand. */
+[data-theme="audius"] .hexaclear-audius-title-card.is-collapsed {
+  width: auto;
+  min-width: 0;
+  grid-template-columns: auto;
+  grid-template-areas: "header";
+  padding: 0.4rem;
+  gap: 0;
+  opacity: 0.86;
+}
+
+[data-theme="audius"] .hexaclear-audius-title-card.is-collapsed .hexaclear-audius-np-header {
+  gap: 0.42rem;
+}
+
+[data-theme="audius"] .hexaclear-audius-title-card.is-peeking {
+  width: min(20rem, calc(100% - 1.5rem));
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: "peek";
+  padding: 0.58rem 0.72rem;
+}
+
+[data-theme="audius"] .hexaclear-audius-title-card.is-collapsed .hexaclear-audius-title-toggle svg {
+  transform: rotate(180deg);
+}
+
+[data-theme="audius"] .hexaclear-audius-title-card.is-collapsed::before,
+[data-theme="audius"] .hexaclear-audius-title-card.is-collapsed .hexaclear-audius-title-copy,
+[data-theme="audius"] .hexaclear-audius-title-card.is-collapsed .hexaclear-audius-progress,
+[data-theme="audius"] .hexaclear-audius-title-card.is-collapsed .hexaclear-audius-media-controls {
+  display: none;
+}
+
+[data-theme="audius"] .hexaclear-audius-title-peek {
+  grid-area: peek;
+  min-width: 0;
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  display: grid;
+  gap: 0.08rem;
+  padding: 0;
+}
+
+[data-theme="audius"] .hexaclear-audius-media-controls {
+  grid-area: actions;
+  display: grid;
+  gap: 0.46rem;
+}
+
+[data-theme="audius"] .hexaclear-audius-progress {
+  grid-area: progress;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.55rem;
+  min-width: 0;
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  font-variant-numeric: tabular-nums;
+  color: color-mix(in srgb, var(--audius-cube-top) 50%, var(--audius-muted));
+}
+
+[data-theme="audius"] .hexaclear-audius-progress-elapsed {
+  justify-self: start;
+  color: color-mix(in srgb, var(--audius-cube-top) 76%, #fff5c8);
+}
+
+[data-theme="audius"] .hexaclear-audius-progress-total {
+  justify-self: end;
+}
+
+/* Custom scrubber: slim track with a left-anchored elapsed fill (driven by
+   --audius-progress-pct since WebKit won't paint a native range fill) and a
+   refined thumb that matches the menu/volume sliders. */
+[data-theme="audius"] .hexaclear-audius-progress input[type='range'] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  max-width: 100%;
+  height: 1.1rem;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+[data-theme="audius"] .hexaclear-audius-progress input[type='range']::-webkit-slider-runnable-track {
+  height: 0.32rem;
+  border-radius: 999px;
+  background:
+    linear-gradient(
+        90deg,
+        color-mix(in srgb, var(--audius-cube-left) 70%, #ffffff),
+        color-mix(in srgb, var(--audius-cube-top) 68%, #fff2b6)
+      )
+      no-repeat,
+    rgba(255, 255, 255, 0.13);
+  background-size: var(--audius-progress-pct, 0%) 100%, 100% 100%;
+}
+
+[data-theme="audius"] .hexaclear-audius-progress input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 0.85rem;
+  height: 0.85rem;
+  margin-top: -0.27rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--audius-cube-top) 55%, transparent);
+  background: color-mix(in srgb, var(--audius-cube-top) 80%, #ffffff);
+  box-shadow:
+    0 0 0 3px rgba(2, 2, 7, 0.72),
+    0 0 12px color-mix(in srgb, var(--audius-cube-left) 36%, transparent);
+}
+
+[data-theme="audius"] .hexaclear-audius-progress input[type='range']::-moz-range-track {
+  height: 0.32rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.13);
+}
+
+[data-theme="audius"] .hexaclear-audius-progress input[type='range']::-moz-range-progress {
+  height: 0.32rem;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--audius-cube-left) 70%, #ffffff),
+    color-mix(in srgb, var(--audius-cube-top) 68%, #fff2b6)
+  );
+}
+
+[data-theme="audius"] .hexaclear-audius-progress input[type='range']::-moz-range-thumb {
+  width: 0.85rem;
+  height: 0.85rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--audius-cube-top) 55%, transparent);
+  background: color-mix(in srgb, var(--audius-cube-top) 80%, #ffffff);
+  box-shadow:
+    0 0 0 3px rgba(2, 2, 7, 0.72),
+    0 0 12px color-mix(in srgb, var(--audius-cube-left) 36%, transparent);
+}
+
+[data-theme="audius"] .hexaclear-audius-progress input[type='range']:focus-visible {
+  outline: none;
+}
+
+[data-theme="audius"]
+  .hexaclear-audius-progress
+  input[type='range']:focus-visible::-webkit-slider-thumb {
+  box-shadow:
+    0 0 0 3px rgba(2, 2, 7, 0.72),
+    0 0 0 5px color-mix(in srgb, var(--audius-cube-top) 60%, transparent);
+}
+
+[data-theme="audius"] .hexaclear-audius-media-button-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.52rem;
+}
+
+[data-theme="audius"] .hexaclear-audius-primary-transport,
+[data-theme="audius"] .hexaclear-audius-secondary-controls {
+  display: inline-flex;
+  align-items: center;
+}
+
+[data-theme="audius"] .hexaclear-audius-primary-transport {
+  justify-content: center;
+  gap: 0.58rem;
+}
+
+[data-theme="audius"] .hexaclear-audius-secondary-controls {
+  justify-content: flex-end;
+  gap: 0.24rem;
+}
+
+[data-theme="audius"] .hexaclear-audius-media-button,
+[data-theme="audius"] .hexaclear-audius-window-close {
+  appearance: none;
+  border: 1px solid color-mix(in srgb, var(--audius-cube-top) 24%, #30263b);
+  border-radius: 0.72rem;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.09), transparent),
+    rgba(4, 3, 9, 0.78);
+  color: color-mix(in srgb, var(--audius-cube-top) 68%, #fff6d0);
+  font: inherit;
+  font-size: 0.58rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+[data-theme="audius"] .hexaclear-audius-media-button {
+  width: 2.45rem;
+  height: 2.45rem;
+  min-width: 2.45rem;
+  min-height: 2.45rem;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border-radius: 999px;
+  line-height: 0;
+}
+
+[data-theme="audius"] .hexaclear-audius-media-button.is-play-pause {
+  width: 3.3rem;
+  height: 3.3rem;
+  min-width: 3.3rem;
+  min-height: 3.3rem;
+}
+
+[data-theme="audius"] .hexaclear-audius-media-button.is-secondary {
+  width: 2.16rem;
+  height: 2.16rem;
+  min-width: 2.16rem;
+  min-height: 2.16rem;
+  opacity: 0.9;
+}
+
+[data-theme="audius"] .hexaclear-audius-media-button svg {
+  width: 1.35rem;
+  height: 1.35rem;
+  overflow: visible;
+}
+
+[data-theme="audius"] .hexaclear-audius-media-button.is-play-pause svg {
+  width: 1.95rem;
+  height: 1.95rem;
+}
+
+[data-theme="audius"] .hexaclear-audius-media-button.is-secondary svg {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+[data-theme="audius"] .hexaclear-audius-media-button svg path,
+[data-theme="audius"] .hexaclear-audius-media-button svg circle {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+[data-theme="audius"] .hexaclear-audius-media-button svg text {
+  fill: currentColor;
+  stroke: none;
+  font-size: 7px;
+  font-weight: 900;
+}
+
+/* Only the play/pause carries the full gold fill so it reads as THE primary
+   action. Active toggles (repeat / volume) get a quieter lit-ring treatment so
+   they don't compete with play for "this is the main button." */
+[data-theme="audius"] .hexaclear-audius-media-button.is-primary {
+  color: #061114;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.36), transparent 48%),
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--audius-cube-top) 76%, #f7de86),
+      color-mix(in srgb, var(--audius-cube-left) 64%, var(--audius-amber))
+    );
+}
+
+[data-theme="audius"] .hexaclear-audius-media-button.is-secondary.is-active {
+  opacity: 1;
+  color: color-mix(in srgb, var(--audius-cube-top) 88%, #fff6d0);
+  border-color: color-mix(in srgb, var(--audius-cube-top) 52%, transparent);
+  background:
+    radial-gradient(
+      circle at 50% 120%,
+      color-mix(in srgb, var(--audius-cube-top) 32%, transparent),
+      transparent 62%
+    ),
+    rgba(4, 3, 9, 0.82);
+  box-shadow:
+    inset 0 0 0 1px color-mix(in srgb, var(--audius-cube-top) 30%, transparent),
+    0 0 10px color-mix(in srgb, var(--audius-cube-left) 24%, transparent);
+}
+
+[data-theme="audius"] .hexaclear-audius-media-button:disabled {
+  opacity: 0.42;
+}
+
+[data-theme="audius"] .hexaclear-audius-media-button.is-resolving:disabled {
+  opacity: 1;
+}
+
+[data-theme="audius"] .hexaclear-audius-spinner {
+  width: 1.08rem;
+  height: 1.08rem;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 999px;
+  animation: hexaclear-audius-spin 720ms linear infinite;
+}
+
+[data-theme="audius"] .hexaclear-audius-mini-volume {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: center;
+  gap: 0.18rem;
+  padding: 0.42rem 0.52rem;
+  border: 1px solid color-mix(in srgb, var(--audius-cube-top) 18%, #30263b);
+  border-radius: 0.72rem;
+  background: rgba(4, 3, 9, 0.88);
+  color: color-mix(in srgb, var(--audius-cube-top) 48%, var(--audius-muted));
+  font-size: 0.56rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+[data-theme="audius"] .hexaclear-audius-mini-volume span {
+  color: color-mix(in srgb, var(--audius-cube-top) 42%, var(--audius-muted));
+}
+
+[data-theme="audius"] .hexaclear-audius-mini-volume input[type='range'] {
+  width: 100%;
+  max-width: 100%;
+  accent-color: color-mix(in srgb, var(--audius-cube-left) 72%, #fff2b6);
+}
+
+[data-theme="audius"] .hexaclear-audius-track {
+  min-width: 0;
+  display: grid;
+  gap: 0.08rem;
+}
+
+[data-theme="audius"] .track-title,
+[data-theme="audius"] .track-artist {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+[data-theme="audius"] .track-title {
+  display: block;
+  font-weight: 900;
+  color: var(--audius-ink);
+}
+
+[data-theme="audius"] .track-title-text {
+  display: inline-block;
+  min-width: 0;
+  padding-right: 1.2rem;
+  transform: translateX(0);
+}
+
+[data-theme="audius"] .track-title.is-overflowing {
+  text-overflow: clip;
+}
+
+[data-theme="audius"] .track-title.is-overflowing .track-title-text {
+  animation: hexaclear-audius-title-marquee 12s linear infinite;
+}
+
+[data-theme="audius"] .track-artist {
+  font-size: 0.7rem;
+  color: color-mix(in srgb, var(--audius-cube-top) 42%, var(--audius-muted));
+}
+
+[data-theme="audius"] .hexaclear-audius-spectrum {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: end;
+  gap: 0.22rem;
+  min-height: 2.1rem;
+}
+
+[data-theme="audius"] .spectrum-bar {
+  display: block;
+  width: 0.5rem;
+  height: 1.8rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--audius-cube-left) 74%, #ffffff);
+  transform-origin: bottom center;
+  opacity: 0.38;
+}
+
+[data-theme="audius"] .spectrum-bass {
+  transform: scaleY(var(--audius-meter-bass));
+  opacity: var(--audius-meter-bass);
+}
+
+[data-theme="audius"] .spectrum-mid {
+  transform: scaleY(var(--audius-meter-mid));
+  opacity: var(--audius-meter-mid);
+}
+
+[data-theme="audius"] .spectrum-treble {
+  transform: scaleY(var(--audius-meter-treble));
+  opacity: var(--audius-meter-treble);
+}
+
+[data-theme="audius"] .spectrum-onset {
+  transform: scaleY(var(--audius-meter-onset));
+  opacity: var(--audius-meter-onset);
+}
+
+[data-theme="audius"] .spectrum-state {
+  align-self: center;
+  white-space: nowrap;
+}
+
+[data-theme="audius"] .hexaclear-audius-search-window-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background:
+    radial-gradient(
+      circle at 50% 42%,
+      color-mix(in srgb, var(--audius-cube-left) 12%, transparent),
+      transparent 42%
+    ),
+    rgba(1, 1, 5, 0.72);
+  pointer-events: auto;
+}
+
+[data-theme="audius"] .hexaclear-audius-search-window {
+  width: min(34rem, calc(100vw - 1.5rem));
+  max-height: min(82dvh, 38rem);
+  overflow: auto;
+  display: grid;
+  gap: 0.68rem;
+  padding: 0.9rem;
+  border: 1px solid color-mix(in srgb, var(--audius-cube-top) 28%, #30263b);
+  border-radius: 1.1rem;
+  background:
+    radial-gradient(
+      circle at 18% 0%,
+      color-mix(in srgb, var(--audius-cube-top) 10%, transparent),
+      transparent 34%
+    ),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.06), transparent 45%),
+    rgba(3, 2, 8, 0.96);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.07),
+    0 20px 60px rgba(0, 0, 0, 0.72),
+    0 0 34px color-mix(in srgb, var(--audius-cube-left) 22%, transparent);
+}
+
+[data-theme="audius"] .hexaclear-audius-search-window-head,
+[data-theme="audius"] .hexaclear-audius-search-window-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+[data-theme="audius"] .hexaclear-audius-search-window-head h2 {
+  margin: 0;
+  color: var(--audius-ink);
+  font-size: clamp(1.1rem, 3vw, 1.6rem);
+  line-height: 1.05;
+}
+
+[data-theme="audius"] .hexaclear-audius-search-window .hexaclear-audius-field,
+[data-theme="audius"] .hexaclear-audius-search-window .hexaclear-audius-meta,
+[data-theme="audius"] .hexaclear-audius-search-window .hexaclear-audius-error {
+  margin: 0;
+}
+
+[data-theme="audius"] .hexaclear-main {
+  justify-content: center;
+  gap: clamp(0.42rem, 0.9dvh, 0.62rem);
+}
+
+[data-theme="audius"] .hexaclear-board-wrapper {
+  min-height: 0;
+  border-radius: 1.35rem;
+  background:
+    radial-gradient(
+      circle at 50% 44%,
+      color-mix(in srgb, var(--audius-cube-top) 22%, transparent) 0%,
+      rgba(8, 10, 18, 0.84) 48%,
+      rgba(2, 1, 6, 0.98) 100%
+    ),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.075), transparent 38%),
+    var(--audius-glass-deep);
+  border: 1px solid color-mix(in srgb, var(--audius-cube-top) 30%, #2f2738);
+  box-shadow:
+    inset 0 0 26px color-mix(in srgb, var(--audius-cube-left) 8%, transparent),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.045),
+    0 18px 42px rgba(0, 0, 0, 0.68);
+  overflow: hidden;
+}
+
+[data-theme="audius"] .hexaclear-board-wrapper::before,
+[data-theme="audius"] .hexaclear-board-wrapper::after {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+/* Music-reactive glow behind the EQ bars. This used to be a full-canvas
+   radial-gradient fill drawn every animation frame; moving it to a
+   GPU-composited CSS layer (driven by the hue/ambience CSS vars at 30fps)
+   removes a heavy per-frame fill that mattered most on mobile. */
+[data-theme="audius"] .hexaclear-board-wrapper::before {
+  z-index: 0;
+  inset: 0;
+  background:
+    radial-gradient(
+      circle at 50% 50%,
+      hsl(var(--audius-viz-hue, 188deg) 95% 66% / 0.55) 0%,
+      hsl(calc(var(--audius-viz-hue, 188deg) + 58deg) 92% 46% / 0.32) 46%,
+      transparent 72%
+    );
+  mix-blend-mode: screen;
+  opacity: var(--audius-board-ambience);
+  transform: scale(var(--audius-stage-scale));
+  will-change: opacity, transform;
+}
+
+[data-theme="audius"] .hexaclear-board-wrapper::after {
+  z-index: 3;
+  inset: 0.45rem;
+  border: 1px solid color-mix(in srgb, var(--audius-cube-top) 15%, transparent);
+}
+
+[data-theme="audius"] .hexaclear-audius-stage-canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.9;
+  transform: scale(var(--audius-stage-scale));
+  transform-origin: center;
+  will-change: opacity, transform;
+}
+
+[data-theme="audius"] .audius-stage-beat-a .hexaclear-audius-stage-canvas,
+[data-theme="audius"] .audius-stage-beat-b .hexaclear-audius-stage-canvas {
+  animation: hexaclear-audius-stage-kick 520ms cubic-bezier(0.16, 1, 0.3, 1)
+    both;
+}
+
+[data-theme="audius"] .hexaclear-board {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+[data-theme="audius"] .hexaclear-audius-vu {
+  position: absolute;
+  top: 11%;
+  bottom: 11%;
+  z-index: 3;
+  width: 0.82rem;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 0.34rem;
+  pointer-events: none;
+}
+
+[data-theme="audius"] .hexaclear-audius-vu-left {
+  left: 0.7rem;
+}
+
+[data-theme="audius"] .hexaclear-audius-vu-right {
+  right: 0.7rem;
+}
+
+[data-theme="audius"] .vu-tick {
+  display: block;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--audius-cube-top) 62%, transparent);
+  transform-origin: center bottom;
+  opacity: 0.24;
+}
+
+[data-theme="audius"] .vu-bass {
+  transform: scaleY(var(--audius-meter-bass));
+  opacity: var(--audius-meter-bass);
+}
+
+[data-theme="audius"] .vu-mid {
+  transform: scaleY(var(--audius-meter-mid));
+  opacity: var(--audius-meter-mid);
+}
+
+[data-theme="audius"] .vu-treble {
+  transform: scaleY(var(--audius-meter-treble));
+  opacity: var(--audius-meter-treble);
+}
+
+[data-theme="audius"] .vu-onset {
+  transform: scaleY(var(--audius-meter-onset));
+  opacity: var(--audius-meter-onset);
+}
+
+[data-theme="audius"] .vu-intensity {
+  transform: scaleY(var(--audius-intensity));
+  opacity: var(--audius-intensity);
+}
+
+[data-theme="audius"] .vu-breath {
+  transform: scaleY(var(--audius-breath));
+  opacity: var(--audius-breath);
+}
+
+[data-theme="audius"] .hexaclear-board-outline-back {
+  stroke: rgba(0, 0, 0, 0.92);
+  stroke-width: 12;
+}
+
+[data-theme="audius"] .hexaclear-board-outline-front {
+  stroke: color-mix(in srgb, var(--audius-cube-top) 52%, var(--audius-amber));
+  stroke-width: 4.8;
+}
+
+[data-theme="audius"] .hexaclear-hex.empty {
+  fill: rgba(5, 2, 8, 0.34);
+  stroke: color-mix(in srgb, var(--audius-cube-top) 25%, #5b3545);
+  stroke-opacity: 0.46;
+  stroke-width: 2.7;
+}
+
+[data-theme="audius"] .hexaclear-slot-fill {
+  fill: color-mix(in srgb, var(--audius-cube-right) 12%, #050209);
+  fill-opacity: 0.74;
+  stroke: color-mix(in srgb, var(--audius-cube-left) 18%, transparent);
+  stroke-width: 0.9;
+  vector-effect: non-scaling-stroke;
+}
+
+[data-theme="audius"] .hexaclear-hex.preview-valid {
+  fill: rgba(255, 255, 255, 0.22);
+  stroke: #ffffff;
+  stroke-opacity: 1;
+  stroke-width: 6;
+  vector-effect: non-scaling-stroke;
+}
+
+[data-theme="audius"] .hexaclear-hex.preview-invalid {
+  fill: rgba(255, 42, 92, 0.46);
+  stroke: #ff5d8c;
+  stroke-opacity: 1;
+  stroke-width: 4.6;
+  vector-effect: non-scaling-stroke;
+  /* Undo the board's music-driven hue-rotate (see #audius-invalid-counter in
+     App.tsx) so the invalid cue can never sweep into a "valid"-looking
+     green/blue — it stays red. */
+  filter: url(#audius-invalid-counter);
+}
+
+[data-theme="audius"] .hexaclear-placement-ghost .placement-ghost-valid {
+  fill: rgba(255, 255, 255, 0.22);
+  stroke: #ffffff;
+  stroke-width: 5;
+  vector-effect: non-scaling-stroke;
+}
+
+[data-theme="audius"] .hexaclear-placement-ghost .placement-ghost-invalid {
+  fill: rgba(255, 42, 92, 0.5);
+  stroke: #ff5d8c;
+  stroke-width: 4;
+  vector-effect: non-scaling-stroke;
+  /* Same counter-rotation as the invalid hex preview above — keep the
+     rejected-piece ghost red regardless of the board's hue sweep. */
+  filter: url(#audius-invalid-counter);
+}
+
+[data-theme="audius"] .hexaclear-hex.preview-clear {
+  fill: color-mix(in srgb, #ffffff 30%, transparent);
+  stroke: #ffffff;
+  stroke-opacity: 1;
+  stroke-width: 5.4;
+  vector-effect: non-scaling-stroke;
+}
+
+[data-theme="audius"] .hexaclear-hex.preview-valid.preview-clear {
+  fill: color-mix(in srgb, #ffffff 48%, transparent);
+  stroke: #ffffff;
+  stroke-width: 5.8;
+}
+
+[data-theme="audius"] .hexaclear-hex.preview-clear ~ .hexaclear-hex-cube {
+  /* Reference a real SVG <filter> (defined in the board <defs>) instead of CSS
+     shorthand filter functions. WebKit/iOS ignores CSS invert()/hue-rotate()
+     on inner SVG elements like <g>, so this is what makes the about-to-clear
+     highlight render on mobile. */
+  filter: url(#audius-clear-invert);
+}
+
+[data-theme="audius"] .hexaclear-hex-cube.preview-piece {
+  pointer-events: none;
+}
+
+/* Ghost preview: same approach as the default theme — a greatly reduced
+   opacity translucent piece (default uses ~0.35 fill) so the board/visualizer
+   shows through, with the normal solid cube edge. No wireframe/dashes. These
+   rules must out-specify the general cube-fill rules above (hence the
+   :not(.preview-piece) exclusions there) so the reduced opacity actually
+   wins. */
+[data-theme="audius"] .hexaclear-hex-cube.preview-piece .cube-top {
+  fill: var(--audius-cube-top);
+  fill-opacity: 0.32;
+}
+
+[data-theme="audius"] .hexaclear-hex-cube.preview-piece .cube-left {
+  fill: var(--audius-cube-left);
+  fill-opacity: 0.32;
+}
+
+[data-theme="audius"] .hexaclear-hex-cube.preview-piece .cube-right {
+  fill: var(--audius-cube-right);
+  fill-opacity: 0.32;
+}
+
+[data-theme="audius"] .hexaclear-hex-cube.preview-piece .cube-face {
+  stroke: color-mix(in srgb, var(--audius-cube-top) 58%, #ffffff);
+  stroke-opacity: 0.5;
+  stroke-width: 1.05;
+}
+
+[data-theme="audius"]
+  .hexaclear-hex-cube:not(.golden):not(.daily-target):not(.partner-piece):not(.preview-piece)
+  .cube-top {
+  fill: var(--audius-cube-top);
+  fill-opacity: 0.9;
+}
+
+[data-theme="audius"]
+  .hexaclear-hex-cube:not(.golden):not(.daily-target):not(.partner-piece):not(.preview-piece)
+  .cube-left {
+  fill: var(--audius-cube-left);
+  fill-opacity: 0.84;
+}
+
+[data-theme="audius"]
+  .hexaclear-hex-cube:not(.golden):not(.daily-target):not(.partner-piece):not(.preview-piece)
+  .cube-right {
+  fill: var(--audius-cube-right);
+  fill-opacity: 0.9;
+}
+
+[data-theme="audius"]
+  .hexaclear-hex-cube:not(.golden):not(.daily-target):not(.preview-piece)
+  .cube-face {
+  stroke: color-mix(in srgb, var(--audius-cube-top) 58%, #ffffff);
+  stroke-opacity: 0.46;
+  stroke-width: 1.05;
+}
+
+[data-theme="audius"] .hexaclear-hex-cube:not(.golden):not(.daily-target)
+  .cube-pulse-overlay,
+[data-theme="audius"] .hexaclear-hex-cube:not(.golden):not(.daily-target)
+  .cube-ripple-overlay {
+  display: none;
+}
+
+[data-theme="audius"] .hexaclear-hand {
+  min-height: 0;
+  height: clamp(80px, 18dvh, 180px);
+  padding: 0.35rem;
+  border-color: color-mix(in srgb, var(--audius-cube-top) 28%, #46384f);
+  border-radius: 1.2rem;
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      color-mix(in srgb, var(--audius-cube-left) 12%, transparent),
+      transparent 36%
+    ),
+    linear-gradient(180deg, rgba(229, 255, 243, 0.055), rgba(5, 1, 8, 0.72)),
+    var(--audius-glass-deep);
+  box-shadow:
+    inset 0 0 26px color-mix(in srgb, var(--audius-cube-left) 8%, transparent),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 0 18px color-mix(in srgb, var(--audius-cube-left) 12%, transparent),
+    0 12px 28px rgba(0, 0, 0, 0.62);
+}
+
+[data-theme="audius"] .hexaclear-hold,
+[data-theme="audius"] .hexaclear-piece-button {
+  border-radius: 0.85rem;
+}
+
+[data-theme="audius"] .hexaclear-hold {
+  border-color: color-mix(in srgb, var(--audius-cube-top) 28%, #47313f);
+  background:
+    radial-gradient(
+      circle at 50% 64%,
+      color-mix(in srgb, var(--audius-cube-left) 8%, transparent),
+      transparent 60%
+    ),
+    rgba(4, 1, 7, 0.62);
+  box-shadow:
+    inset 0 0 18px rgba(0, 0, 0, 0.72),
+    inset 0 0 3px color-mix(in srgb, var(--audius-cube-left) 14%, transparent);
+}
+
+[data-theme="audius"] .hexaclear-piece-button {
+  background:
+    radial-gradient(
+      circle at 50% 62%,
+      color-mix(in srgb, var(--audius-cube-left) 9%, transparent),
+      transparent 58%
+    );
+}
+
+[data-theme="audius"] .hexaclear-piece-button .hexaclear-hex.piece,
+[data-theme="audius"] .hexaclear-hold-piece .hexaclear-hex.piece {
+  fill: var(--audius-cube-top);
+  fill-opacity: 0.9;
+  stroke: color-mix(in srgb, var(--audius-cube-right) 70%, #ffffff);
+  stroke-opacity: 0.46;
+}
+
+[data-theme="audius"] .hexaclear-piece-button .hexaclear-hex-bevels,
+[data-theme="audius"] .hexaclear-hold-piece .hexaclear-hex-bevels {
+  display: block;
+}
+
+[data-theme="audius"] .hexaclear-piece-button .hexaclear-hex-bevel-highlight,
+[data-theme="audius"] .hexaclear-hold-piece .hexaclear-hex-bevel-highlight {
+  stroke: color-mix(in srgb, var(--audius-cube-top) 74%, #ffffff);
+  stroke-opacity: 0.46;
+}
+
+[data-theme="audius"] .hexaclear-piece-button .hexaclear-hex-bevel-shadow,
+[data-theme="audius"] .hexaclear-hold-piece .hexaclear-hex-bevel-shadow {
+  stroke: color-mix(in srgb, var(--audius-cube-right) 70%, #020106);
+  stroke-opacity: 0.82;
+}
+
+[data-theme="audius"] .hexaclear-piece-button + .hexaclear-piece-button::before {
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    color-mix(in srgb, var(--audius-cube-top) 26%, transparent) 25%,
+    color-mix(in srgb, var(--audius-cube-left) 22%, transparent) 75%,
+    transparent
+  );
+}
+
+[data-theme="audius"] .hexaclear-piece-button.selected,
+[data-theme="audius"] .hexaclear-hold.is-drop-active,
+[data-theme="audius"] .hexaclear-hold.selected {
+  background:
+    radial-gradient(
+      circle,
+      color-mix(in srgb, var(--audius-cube-top) 14%, transparent),
+      rgba(4, 1, 7, 0.54) 70%
+    );
+  box-shadow:
+    inset 0 0 0 1px
+      color-mix(in srgb, var(--audius-cube-top) 62%, transparent),
+    0 0 16px color-mix(in srgb, var(--audius-cube-left) 26%, transparent);
+}
+
+[data-theme="audius"] .hexaclear-hold-label {
+  color: color-mix(in srgb, var(--audius-cube-top) 52%, #d7b773);
+}
+
+[data-theme="audius"] .hexaclear-hold.unplayable .hexaclear-piece-svg,
+[data-theme="audius"] .hexaclear-piece-button.unplayable {
+  filter: grayscale(0.35) brightness(0.78);
+  opacity: 0.48;
+}
+
+[data-theme="audius"] .hexaclear-audius-panel {
+  background:
+    linear-gradient(180deg, rgba(229, 255, 243, 0.06), rgba(5, 1, 8, 0.22)),
+    rgba(3, 3, 8, 0.52);
+  border-color: color-mix(in srgb, var(--audius-cube-top) 28%, #594654);
+}
+
+[data-theme="audius"] .hexaclear-overlay {
+  /* The audius board wrapper uses overflow:hidden to clip the canvas/glow to
+     its rounded panel, which would otherwise crop modal overlays (menu, daily
+     history, game over) that render as its children. None of the overlay's
+     ancestors establish a containing block for fixed positioning, so pinning
+     it to the viewport lets every modal escape the board clip and span the
+     full screen. z-index is left at its base (50) so the search window
+     backdrop (80) still layers above an open menu. */
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(
+      circle at 50% 42%,
+      color-mix(in srgb, var(--audius-cube-left) 12%, transparent),
+      rgba(0, 0, 0, 0.72) 44%,
+      rgba(0, 0, 0, 0.94)
+    );
+}
+
+[data-theme="audius"] .hexaclear-overlay-card,
+[data-theme="audius"] .hexaclear-audio-unlock-card {
+  color: var(--audius-ink);
+  border: 1px solid color-mix(in srgb, var(--audius-cube-top) 24%, #30263b);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.06), transparent 36%),
+    radial-gradient(
+      circle at 20% 10%,
+      color-mix(in srgb, var(--audius-cube-left) 12%, transparent),
+      transparent 42%
+    ),
+    rgba(4, 3, 9, 0.96);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.07),
+    inset 0 0 34px color-mix(in srgb, var(--audius-cube-left) 7%, transparent),
+    0 24px 62px rgba(0, 0, 0, 0.82),
+    0 0 28px color-mix(in srgb, var(--audius-cube-left) 16%, transparent);
+}
+
+[data-theme="audius"] .hexaclear-overlay-card .title,
+[data-theme="audius"] .hexaclear-audio-unlock-title {
+  color: color-mix(in srgb, var(--audius-cube-top) 78%, #fff4c7);
+  text-shadow:
+    0 0 1px rgba(255, 255, 255, 0.8),
+    0 0 11px color-mix(in srgb, var(--audius-cube-left) 48%, transparent);
+}
+
+[data-theme="audius"] .hexaclear-overlay-card .score,
+[data-theme="audius"] .hexaclear-scores-empty,
+[data-theme="audius"] .hexaclear-scores-your-rank,
+[data-theme="audius"] .hexaclear-history-legend,
+[data-theme="audius"] .hexaclear-coop-instructions,
+[data-theme="audius"] .hexaclear-coop-code,
+[data-theme="audius"] .hexaclear-menu-nav-tease,
+[data-theme="audius"] .hexaclear-menu-settings-account-text {
+  color: color-mix(in srgb, var(--audius-cube-top) 42%, var(--audius-muted));
+  opacity: 1;
+}
+
+[data-theme="audius"] .hexaclear-input,
+[data-theme="audius"] .hexaclear-menu-settings-select,
+[data-theme="audius"] .hexaclear-menu-settings-text,
+[data-theme="audius"] .hexaclear-audius-search,
+[data-theme="audius"] .hexaclear-coop-share-input,
+[data-theme="audius"] .hexaclear-account-form input {
+  border: 1px solid color-mix(in srgb, var(--audius-cube-top) 24%, #30263b);
+  background: rgba(2, 2, 7, 0.78);
+  color: var(--audius-ink);
+}
+
+[data-theme="audius"] .hexaclear-input:focus,
+[data-theme="audius"] .hexaclear-menu-settings-select:focus,
+[data-theme="audius"] .hexaclear-menu-settings-text:focus,
+[data-theme="audius"] .hexaclear-audius-search:focus,
+[data-theme="audius"] .hexaclear-coop-share-input:focus,
+[data-theme="audius"] .hexaclear-account-form input:focus {
+  outline: 2px solid color-mix(in srgb, var(--audius-cube-left) 46%, transparent);
+  outline-offset: 2px;
+}
+
+[data-theme="audius"] .hexaclear-audius-search::placeholder {
+  color: color-mix(in srgb, var(--audius-cube-top) 34%, transparent);
+}
+
+[data-theme="audius"] .hexaclear-menu-settings-audio,
+[data-theme="audius"] .hexaclear-audius-volume {
+  border-color: color-mix(in srgb, var(--audius-cube-top) 18%, #30263b);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent),
+    rgba(2, 2, 7, 0.62);
+  color: color-mix(in srgb, var(--audius-cube-top) 52%, var(--audius-muted));
+}
+
+[data-theme="audius"] .hexaclear-audius-panel-head,
+[data-theme="audius"] .hexaclear-audius-field,
+[data-theme="audius"] .hexaclear-audius-volume > span {
+  color: color-mix(in srgb, var(--audius-cube-top) 48%, var(--audius-muted));
+}
+
+[data-theme="audius"] .hexaclear-menu-settings-audio-readout,
+[data-theme="audius"] .hexaclear-audius-volume output {
+  color: color-mix(in srgb, var(--audius-cube-top) 76%, #fff5c8);
+}
+
+[data-theme="audius"] .hexaclear-menu-settings-audio input[type='range'],
+[data-theme="audius"] .hexaclear-audius-volume input[type='range'] {
+  accent-color: color-mix(in srgb, var(--audius-cube-left) 76%, #ffffff);
+}
+
+[data-theme="audius"] .hexaclear-menu-settings-audio input[type='range']::-webkit-slider-runnable-track,
+[data-theme="audius"] .hexaclear-audius-volume input[type='range']::-webkit-slider-runnable-track {
+  height: 0.34rem;
+  border-radius: 999px;
+  background:
+    linear-gradient(90deg, color-mix(in srgb, var(--audius-cube-left) 68%, #ffffff), color-mix(in srgb, var(--audius-cube-top) 62%, #ffffff)),
+    rgba(255, 255, 255, 0.08);
+}
+
+[data-theme="audius"] .hexaclear-menu-settings-audio input[type='range']::-webkit-slider-thumb,
+[data-theme="audius"] .hexaclear-audius-volume input[type='range']::-webkit-slider-thumb {
+  border: 1px solid color-mix(in srgb, var(--audius-cube-top) 50%, transparent);
+  box-shadow:
+    0 0 0 3px rgba(2, 2, 7, 0.72),
+    0 0 12px color-mix(in srgb, var(--audius-cube-left) 32%, transparent);
+}
+
+[data-theme="audius"] .hexaclear-menu-settings-audio input[type='range']::-moz-range-track,
+[data-theme="audius"] .hexaclear-audius-volume input[type='range']::-moz-range-track {
+  height: 0.34rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+[data-theme="audius"] .hexaclear-menu-settings-audio input[type='range']::-moz-range-progress,
+[data-theme="audius"] .hexaclear-audius-volume input[type='range']::-moz-range-progress {
+  height: 0.34rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--audius-cube-left) 72%, #ffffff);
+}
+
+[data-theme="audius"] .hexaclear-menu-settings-audio input[type='range']::-moz-range-thumb,
+[data-theme="audius"] .hexaclear-audius-volume input[type='range']::-moz-range-thumb {
+  border: 1px solid color-mix(in srgb, var(--audius-cube-top) 50%, transparent);
+  background: color-mix(in srgb, var(--audius-cube-top) 72%, #ffffff);
+  box-shadow:
+    0 0 0 3px rgba(2, 2, 7, 0.72),
+    0 0 12px color-mix(in srgb, var(--audius-cube-left) 32%, transparent);
+}
+
+[data-theme="audius"] .hexaclear-overlay-card
+  button:not(.hexaclear-reset):not(.hexaclear-menu-link):not(.hexaclear-menu-restart-link):not(.hexaclear-scoring-tab):not(.hexaclear-scores-tab):not(.hexaclear-piecetiary-cell):not(.hexaclear-reel-replay):not(.hexaclear-reel-download):not(.hexaclear-scores-expand-toggle),
+[data-theme="audius"] .hexaclear-menu-chip,
+[data-theme="audius"] .hexaclear-coop-cta,
+[data-theme="audius"] .hexaclear-coop-share-copy,
+[data-theme="audius"] .hexaclear-account-mode-row button,
+[data-theme="audius"] .hexaclear-menu-settings-account-button {
+  border: 1px solid color-mix(in srgb, var(--audius-cube-top) 28%, #30263b) !important;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.09), transparent),
+    rgba(5, 4, 11, 0.82) !important;
+  color: color-mix(in srgb, var(--audius-cube-top) 66%, #f2d8a6) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.09),
+    0 0 10px color-mix(in srgb, var(--audius-cube-left) 16%, transparent);
+}
+
+[data-theme="audius"] .hexaclear-menu-new-game-hero,
+[data-theme="audius"] .hexaclear-menu-resume-hero,
+[data-theme="audius"] .hexaclear-menu-chip.is-primary,
+[data-theme="audius"] .hexaclear-coop-mode-pill.is-active,
+[data-theme="audius"] .hexaclear-account-mode-row button.is-active,
+[data-theme="audius"] .hexaclear-scoring-tab.is-active,
+[data-theme="audius"] .hexaclear-scores-tab.is-active,
+[data-theme="audius"] .hexaclear-history-button.is-archive,
+[data-theme="audius"] .hexaclear-history-cell.is-active {
+  color: #061114 !important;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.42), transparent 48%),
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--audius-cube-top) 76%, #f7de86),
+      color-mix(in srgb, var(--audius-cube-left) 64%, var(--audius-amber))
+    ) !important;
+  border-color: color-mix(in srgb, var(--audius-cube-top) 54%, transparent) !important;
+}
+
+[data-theme="audius"] .hexaclear-menu-chip-danger,
+[data-theme="audius"] .hexaclear-menu-link.is-danger {
+  border-color: rgba(255, 96, 124, 0.54) !important;
+  color: #ffd7df !important;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), transparent),
+    rgba(64, 5, 22, 0.76) !important;
+}
+
+[data-theme="audius"] .hexaclear-menu-card,
+[data-theme="audius"] .hexaclear-scores-card,
+[data-theme="audius"] .hexaclear-stats-card,
+[data-theme="audius"] .hexaclear-account-card,
+[data-theme="audius"] .hexaclear-scoring-card,
+[data-theme="audius"] .hexaclear-history-card,
+[data-theme="audius"] .hexaclear-gameover-card,
+[data-theme="audius"] .hexaclear-coop-waiting-card,
+[data-theme="audius"] .hexaclear-coop-error-card {
+  border-radius: 1.05rem;
+}
+
+/* ----- Music visualizer game-over screen ----------------------------------
+   The base game-over card leans on the warm wood palette (amber final score,
+   brown highlight-reel cubes, warm run-strip + dividers) which clashes with
+   the audius cyan/dark aesthetic. The generic overlay/button/section rules
+   above already cover the leaderboard, inputs and CTAs; these rules re-skin
+   the remaining game-over-specific pieces so the whole screen reads as part
+   of the visualizer theme. */
+[data-theme="audius"] .hexaclear-gameover-headline-value {
+  color: color-mix(in srgb, var(--audius-cube-top) 82%, #fff7d8);
+  text-shadow:
+    0 0 2px rgba(255, 255, 255, 0.7),
+    0 0 16px color-mix(in srgb, var(--audius-cube-left) 55%, transparent);
+}
+
+[data-theme="audius"] .hexaclear-gameover-headline-label,
+[data-theme="audius"] .hexaclear-gameover-subhead {
+  color: color-mix(in srgb, var(--audius-cube-top) 46%, var(--audius-muted));
+}
+
+[data-theme="audius"] .hexaclear-gameover-daily-intro-copy {
+  color: color-mix(in srgb, var(--audius-cube-top) 40%, var(--audius-muted));
+}
+
+[data-theme="audius"]
+  .hexaclear-gameover-section
+  + .hexaclear-gameover-section {
+  border-top-color: color-mix(in srgb, var(--audius-cube-top) 14%, transparent);
+}
+
+[data-theme="audius"] .hexaclear-run-strip {
+  border-block-color: color-mix(in srgb, var(--audius-cube-top) 16%, transparent);
+  background:
+    linear-gradient(
+      90deg,
+      color-mix(in srgb, var(--audius-cube-left) 4%, transparent),
+      color-mix(in srgb, var(--audius-cube-left) 14%, transparent),
+      color-mix(in srgb, var(--audius-cube-left) 4%, transparent)
+    );
+}
+
+[data-theme="audius"] .hexaclear-run-stat-value {
+  color: color-mix(in srgb, var(--audius-cube-top) 78%, #fff5c8);
+  text-shadow: 0 0 8px color-mix(in srgb, var(--audius-cube-left) 30%, transparent);
+}
+
+[data-theme="audius"] .hexaclear-run-stat-label {
+  color: color-mix(in srgb, var(--audius-cube-top) 46%, var(--audius-muted));
+}
+
+/* Highlight reel: recolor the mini-board to the cube palette. The ruby stays
+   red (a meaningful marker), so the cube rules skip .is-ruby. */
+[data-theme="audius"] .hexaclear-reel-title,
+[data-theme="audius"] .hexaclear-reel-caption {
+  color: color-mix(in srgb, var(--audius-cube-top) 56%, var(--audius-muted));
+}
+
+[data-theme="audius"] .hexaclear-reel-hex {
+  fill: rgba(5, 2, 8, 0.5);
+  stroke: color-mix(in srgb, var(--audius-cube-top) 16%, transparent);
+}
+
+[data-theme="audius"] .hexaclear-reel-cube:not(.is-ruby) {
+  fill: color-mix(in srgb, var(--audius-cube-left) 80%, #0a2c30);
+  stroke: rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="audius"]
+  .hexaclear-reel-cell.is-placed-now
+  .hexaclear-reel-cube:not(.is-ruby) {
+  fill: color-mix(in srgb, var(--audius-cube-top) 70%, #58e8d0);
+}
+
+[data-theme="audius"] .hexaclear-reel-points {
+  color: color-mix(in srgb, var(--audius-cube-top) 82%, #fff7d8);
+  text-shadow:
+    0 0 8px color-mix(in srgb, var(--audius-cube-left) 50%, transparent),
+    0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* ----- Music visualizer profile / stats menu ------------------------------
+   The stats card content (summary masthead, performance panel, mode ledger,
+   record book, statlines) uses the warm wood palette. The card surface,
+   section labels and section backgrounds are already covered by the generic
+   rules above; these rules re-skin the remaining stats-specific content to
+   the cyan/dark visualizer look. */
+[data-theme="audius"] .hexaclear-profile-summary {
+  border-color: color-mix(in srgb, var(--audius-cube-top) 18%, #30263b);
+  background:
+    radial-gradient(
+      circle at 0% 0%,
+      color-mix(in srgb, var(--audius-cube-left) 16%, transparent),
+      transparent 48%
+    ),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.05), transparent 60%),
+    rgba(2, 2, 7, 0.62);
+}
+
+[data-theme="audius"] .hexaclear-profile-summary-main,
+[data-theme="audius"] .hexaclear-performance-feature {
+  border-right-color: color-mix(in srgb, var(--audius-cube-top) 14%, transparent);
+}
+
+[data-theme="audius"] .hexaclear-performance-panel {
+  border-block-color: color-mix(in srgb, var(--audius-cube-top) 16%, transparent);
+  background: color-mix(in srgb, var(--audius-cube-left) 6%, transparent);
+}
+
+[data-theme="audius"] .hexaclear-mode-ledger-item {
+  border-color: color-mix(in srgb, var(--audius-cube-top) 16%, transparent);
+  background: color-mix(in srgb, var(--audius-cube-left) 6%, transparent);
+}
+
+[data-theme="audius"] .hexaclear-profile-summary-line,
+[data-theme="audius"] .hexaclear-statline,
+[data-theme="audius"] .hexaclear-record-row {
+  border-bottom-color: color-mix(in srgb, var(--audius-cube-top) 12%, transparent);
+}
+
+/* Big numeric features get a teal glow; smaller values stay crisp cyan. */
+[data-theme="audius"] .hexaclear-profile-summary-value,
+[data-theme="audius"] .hexaclear-performance-feature-value,
+[data-theme="audius"] .hexaclear-record-value {
+  color: color-mix(in srgb, var(--audius-cube-top) 80%, #fff5c8);
+  text-shadow:
+    0 0 12px color-mix(in srgb, var(--audius-cube-left) 34%, transparent),
+    0 1px 2px rgba(0, 0, 0, 0.55);
+}
+
+[data-theme="audius"] .hexaclear-statline-value,
+[data-theme="audius"] .hexaclear-profile-summary-line strong,
+[data-theme="audius"] .hexaclear-mode-ledger-value {
+  color: color-mix(in srgb, var(--audius-cube-top) 76%, #fff5c8);
+}
+
+[data-theme="audius"] .hexaclear-profile-summary-label,
+[data-theme="audius"] .hexaclear-performance-feature-label,
+[data-theme="audius"] .hexaclear-mode-ledger-label,
+[data-theme="audius"] .hexaclear-record-label,
+[data-theme="audius"] .hexaclear-statline-label,
+[data-theme="audius"] .hexaclear-profile-summary-line span,
+[data-theme="audius"] .hexaclear-stats-tracking-since {
+  color: color-mix(in srgb, var(--audius-cube-top) 44%, var(--audius-muted));
+}
+
+/* ----- Music visualizer secondary buttons ---------------------------------
+   The board Undo button and the "Back" buttons in the menu sub-screens
+   (profile/stats, scoring, scores, account) use the warm orange pill by
+   default — the generic overlay-button rule above deliberately skips
+   .hexaclear-reset. Re-skin them as the theme's dark-glass secondary button
+   so they match the rest of the visualizer chrome. The history Close and the
+   resume/new-game heroes keep their own dedicated bright treatments. */
+[data-theme="audius"] .hexaclear-undo-button,
+[data-theme="audius"] .hexaclear-stats-card .hexaclear-reset,
+[data-theme="audius"] .hexaclear-scoring-card .hexaclear-reset,
+[data-theme="audius"] .hexaclear-scores-card .hexaclear-reset,
+[data-theme="audius"] .hexaclear-account-card .hexaclear-reset {
+  /* The board sits at z-index 2 and the now-playing card at 8 inside the
+     board wrapper; without an explicit z-index the Undo button paints
+     beneath the board (z-index: auto) so the board's SVG swallows every
+     click. Lift it above the in-wrapper layers so it's actually usable. */
+  z-index: 9;
+  border: 1px solid color-mix(in srgb, var(--audius-cube-top) 28%, #30263b);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.09), transparent),
+    rgba(5, 4, 11, 0.82);
+  color: color-mix(in srgb, var(--audius-cube-top) 70%, #f2d8a6);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.09),
+    0 0 12px color-mix(in srgb, var(--audius-cube-left) 18%, transparent);
+}
+
+[data-theme="audius"] .hexaclear-menu-zone,
+[data-theme="audius"] .hexaclear-menu-settings-zone,
+[data-theme="audius"] .hexaclear-menu-settings-body,
+[data-theme="audius"] .hexaclear-menu-nav-card,
+[data-theme="audius"] .hexaclear-menu-settings-group,
+[data-theme="audius"] .hexaclear-stats-section,
+[data-theme="audius"] .hexaclear-scores-section,
+[data-theme="audius"] .hexaclear-account-copy,
+[data-theme="audius"] .hexaclear-account-summary,
+[data-theme="audius"] .hexaclear-account-stat,
+[data-theme="audius"] .hexaclear-account-online,
+[data-theme="audius"] .hexaclear-scoring-rule,
+[data-theme="audius"] .hexaclear-piecetiary-cell,
+[data-theme="audius"] .hexaclear-coop-status,
+[data-theme="audius"] .hexaclear-pvp-hud,
+[data-theme="audius"] .hexaclear-pvp-tracks,
+[data-theme="audius"] .hexaclear-pvp-standings {
+  border-color: color-mix(in srgb, var(--audius-cube-top) 18%, #30263b);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.045), transparent),
+    rgba(2, 2, 7, 0.62);
+  color: var(--audius-ink);
+}
+
+[data-theme="audius"] .hexaclear-menu-settings-strip,
+[data-theme="audius"] .hexaclear-history-button,
+[data-theme="audius"] .hexaclear-scoring-tab,
+[data-theme="audius"] .hexaclear-scores-tab,
+[data-theme="audius"] .hexaclear-scores-date-step,
+[data-theme="audius"] .hexaclear-scores-page-step,
+[data-theme="audius"] .hexaclear-scores-expand-toggle,
+[data-theme="audius"] .hexaclear-coop-mode-toggle {
+  border-color: color-mix(in srgb, var(--audius-cube-top) 22%, #30263b) !important;
+  background: rgba(3, 3, 8, 0.72) !important;
+  color: color-mix(in srgb, var(--audius-cube-top) 58%, var(--audius-ink)) !important;
+}
+
+[data-theme="audius"] .hexaclear-menu-zone-label,
+[data-theme="audius"] .hexaclear-menu-settings-group-label,
+[data-theme="audius"] .hexaclear-scores-section-label,
+[data-theme="audius"] .hexaclear-stats-section-label,
+[data-theme="audius"] .hexaclear-scoring-rule-title,
+[data-theme="audius"] .hexaclear-history-weekday,
+[data-theme="audius"] .hexaclear-pvp-standings-label,
+[data-theme="audius"] .hexaclear-coop-status .label {
+  color: color-mix(in srgb, var(--audius-cube-top) 48%, var(--audius-muted));
+}
+
+[data-theme="audius"] .hexaclear-menu-nav-title,
+[data-theme="audius"] .hexaclear-scores-value,
+[data-theme="audius"] .hexaclear-stats-section strong,
+[data-theme="audius"] .hexaclear-account-stat span,
+[data-theme="audius"] .hexaclear-account-online span,
+[data-theme="audius"] .hexaclear-coop-status .value {
+  color: color-mix(in srgb, var(--audius-cube-top) 78%, #fff5c8);
+}
+
+[data-theme="audius"] .hexaclear-scores-row + .hexaclear-scores-row,
+[data-theme="audius"] .hexaclear-scores-section + .hexaclear-scores-section {
+  border-color: color-mix(in srgb, var(--audius-cube-top) 14%, transparent);
+}
+
+[data-theme="audius"] .hexaclear-scores-row.recent,
+[data-theme="audius"] .hexaclear-scores-row-pinned,
+[data-theme="audius"] .hexaclear-pvp-standings-row.is-winner {
+  background: color-mix(in srgb, var(--audius-cube-left) 12%, transparent);
+}
+
+[data-theme="audius"] .hexaclear-history-cell {
+  border-color: color-mix(in srgb, var(--audius-cube-top) 15%, #30263b);
+  border-radius: 0.6rem !important;
+  background: rgba(2, 2, 7, 0.66);
+  color: var(--audius-ink);
+}
+
+[data-theme="audius"] .hexaclear-overlay-card button.hexaclear-history-cell {
+  border-radius: 0.6rem !important;
+}
+
+[data-theme="audius"] .hexaclear-history-cell:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--audius-cube-left) 14%, rgba(2, 2, 7, 0.76));
+  border-color: color-mix(in srgb, var(--audius-cube-top) 34%, transparent);
+}
+
+[data-theme="audius"] .hexaclear-history-cell.is-today {
+  border-color: color-mix(in srgb, var(--audius-cube-top) 62%, transparent);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--audius-cube-left) 35%, transparent);
+}
+
+[data-theme="audius"] .hexaclear-history-cell.is-cleared {
+  background:
+    linear-gradient(180deg, rgba(116, 255, 188, 0.28), rgba(24, 105, 88, 0.62)),
+    rgba(2, 2, 7, 0.76);
+  border-color: color-mix(in srgb, var(--audius-cube-left) 48%, transparent);
+}
+
+[data-theme="audius"] .hexaclear-history-card > .hexaclear-reset {
+  margin-top: 0.85rem;
+  border: 1px solid color-mix(in srgb, var(--audius-cube-top) 36%, #30263b);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.34), transparent 48%),
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--audius-cube-top) 72%, #f7de86),
+      color-mix(in srgb, var(--audius-cube-left) 58%, var(--audius-amber))
+    );
+  color: #061114;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.28),
+    0 0 16px color-mix(in srgb, var(--audius-cube-left) 24%, transparent);
+}
+
+[data-theme="audius"] .hexaclear-coop-mode-toggle {
+  padding: 2px;
+}
+
+[data-theme="audius"] .hexaclear-coop-mode-pill {
+  color: color-mix(in srgb, var(--audius-cube-top) 48%, var(--audius-muted));
+}
+
+[data-theme="audius"] .hexaclear-coop-cta.is-copied,
+[data-theme="audius"] .hexaclear-account-message {
+  border-color: color-mix(in srgb, var(--audius-cube-left) 38%, transparent) !important;
+  background:
+    linear-gradient(180deg, rgba(116, 255, 188, 0.22), rgba(24, 105, 88, 0.5)),
+    rgba(2, 2, 7, 0.76) !important;
+  color: #d7fff7 !important;
+}
+
+[data-theme="audius"] .hexaclear-account-message.is-error,
+[data-theme="audius"] .hexaclear-coop-error-message {
+  border-color: rgba(255, 96, 124, 0.45);
+  color: #ffd7df;
+}
+
+[data-theme="audius"] .hexaclear-pvp-row-track {
+  background: rgba(2, 2, 7, 0.7);
+  border-color: color-mix(in srgb, var(--audius-cube-top) 16%, transparent);
+}
+
+[data-theme="audius"] .hexaclear-pvp-row-track-threshold {
+  background: color-mix(in srgb, var(--audius-cube-top) 72%, #fff5c8);
+}
+
+[data-theme="audius"] .hexaclear-pvp-win-tag,
+[data-theme="audius"] .hexaclear-pvp-banner {
+  border-color: color-mix(in srgb, var(--audius-cube-top) 24%, #30263b);
+  background: rgba(2, 2, 7, 0.72);
+  color: var(--audius-ink);
+}
+
+/* This theme file loads before the shared stylesheet. Keep these
+   high-specificity bridges until the legacy visualizer block is fully
+   retired from index.css, so the deck geometry wins the cascade. */
+[data-theme="audius"] .cubic-viewport.is-audius-visualizer {
+  background:
+    radial-gradient(
+      circle at 50% -14%,
+      color-mix(in srgb, var(--audius-cube-top) 20%, transparent) 0%,
+      transparent 38%
+    ),
+    radial-gradient(circle at 50% 66%, #16101f 0%, #08050e 58%, #030106 100%);
+}
+
+[data-theme="audius"] .cubic-viewport.is-audius-visualizer .hexaclear-root {
+  width: min(100%, 860px);
+  max-width: min(860px, calc(100vw - 1rem));
+  padding: clamp(0.45rem, 1.1dvh, 0.7rem);
+  gap: clamp(0.42rem, 0.9dvh, 0.62rem);
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      color-mix(in srgb, var(--audius-cube-top) 10%, transparent),
+      transparent 30%
+    ),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.025), transparent 28%),
+    var(--audius-shell);
+}
+
+[data-theme="audius"]
+  .cubic-viewport.is-audius-visualizer
+  .hexaclear-board-wrapper {
+  background:
+    radial-gradient(
+      circle at 50% 44%,
+      color-mix(in srgb, var(--audius-cube-top) 22%, transparent) 0%,
+      rgba(8, 10, 18, 0.84) 48%,
+      rgba(2, 1, 6, 0.98) 100%
+    ),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.075), transparent 38%),
+    var(--audius-glass-deep);
+  border: 1px solid color-mix(in srgb, var(--audius-cube-top) 30%, #2f2738);
+  box-shadow:
+    inset 0 0 26px color-mix(in srgb, var(--audius-cube-left) 8%, transparent),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.045),
+    0 18px 42px rgba(0, 0, 0, 0.68);
+}
+
+[data-theme="audius"] .cubic-viewport.is-audius-visualizer .hexaclear-board {
+  width: 100%;
+  height: 100%;
+  /* Global music response for the whole cube layer: ONE compositor filter
+     (not per-cube), fed by the analyser vars. The cube subtree is static, so
+     the browser caches it as a texture and just re-runs these GPU shaders per
+     frame — we avoid blur/drop-shadow (neighborhood samplers) and per-cube
+     fill changes (repaints). The hue-rotate is a constant, music-driven
+     rotation (advanced in JS as --audius-cube-hue-rotate) so the whole palette
+     sweeps continuously through the spectrum. */
+  filter:
+    brightness(
+      calc(1 + var(--audius-intensity, 0) * 0.18 + var(--audius-onset, 0) * 0.14)
+    )
+    saturate(
+      calc(1 + var(--audius-bass, 0) * 0.4 + var(--audius-intensity, 0) * 0.3)
+    )
+    hue-rotate(var(--audius-cube-hue-rotate, 0deg));
+  will-change: filter;
+}
+
+/* Mirror the board's music-reactive filter on the in-hand and held pieces so
+   the whole palette pulses and hue-rotates together. Only a few static SVGs,
+   so a per-piece compositor filter is cheap. Specificity must beat the
+   `filter: none` neutralizer in index.css (0,4,0). Unplayable pieces are
+   excluded so they keep their grayed-out cue. */
+[data-theme="audius"]
+  .cubic-viewport.is-audius-visualizer
+  .hexaclear-piece-button:not(.unplayable)
+  .hexaclear-piece-svg,
+[data-theme="audius"]
+  .cubic-viewport.is-audius-visualizer
+  .hexaclear-hold:not(.unplayable)
+  .hexaclear-piece-svg {
+  filter:
+    brightness(
+      calc(1 + var(--audius-intensity, 0) * 0.18 + var(--audius-onset, 0) * 0.14)
+    )
+    saturate(
+      calc(1 + var(--audius-bass, 0) * 0.4 + var(--audius-intensity, 0) * 0.3)
+    )
+    hue-rotate(var(--audius-cube-hue-rotate, 0deg));
+  will-change: filter;
+}
+
+/* Hold the cubes perfectly still/neutral when the user prefers reduced motion
+   (the analyser vars are also stripped in this state, but be explicit). */
+[data-theme="audius"].reduced-motion
+  .cubic-viewport.is-audius-visualizer
+  .hexaclear-board,
+[data-theme="audius"]
+  .reduced-motion
+  .cubic-viewport.is-audius-visualizer
+  .hexaclear-board {
+  transform: none;
+  filter: none;
+  will-change: auto;
+}
+
+[data-theme="audius"].reduced-motion
+  .cubic-viewport.is-audius-visualizer
+  .hexaclear-piece-button:not(.unplayable)
+  .hexaclear-piece-svg,
+[data-theme="audius"]
+  .reduced-motion
+  .cubic-viewport.is-audius-visualizer
+  .hexaclear-piece-button:not(.unplayable)
+  .hexaclear-piece-svg,
+[data-theme="audius"].reduced-motion
+  .cubic-viewport.is-audius-visualizer
+  .hexaclear-hold:not(.unplayable)
+  .hexaclear-piece-svg,
+[data-theme="audius"]
+  .reduced-motion
+  .cubic-viewport.is-audius-visualizer
+  .hexaclear-hold:not(.unplayable)
+  .hexaclear-piece-svg {
+  filter: none;
+  will-change: auto;
+}
+
+[data-theme="audius"] .cubic-viewport.is-audius-visualizer .hexaclear-hand {
+  height: clamp(80px, 18dvh, 180px);
+  padding: 0.35rem;
+  border-color: color-mix(in srgb, var(--audius-cube-top) 28%, #46384f);
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      color-mix(in srgb, var(--audius-cube-left) 12%, transparent),
+      transparent 36%
+    ),
+    linear-gradient(180deg, rgba(229, 255, 243, 0.055), rgba(5, 1, 8, 0.72)),
+    var(--audius-glass-deep);
+}
+
+[data-theme="audius"] .cubic-viewport.is-audius-visualizer .hexaclear-hold,
+[data-theme="audius"]
+  .cubic-viewport.is-audius-visualizer
+  .hexaclear-piece-button {
+  border-radius: 0.85rem;
+}
+
+[data-theme="audius"].reduced-motion .cube-pulse-overlay,
+[data-theme="audius"] .reduced-motion .cube-pulse-overlay,
+[data-theme="audius"].reduced-motion .cube-ripple-overlay,
+[data-theme="audius"] .reduced-motion .cube-ripple-overlay,
+[data-theme="audius"].reduced-motion .hexaclear-audius-stage-canvas,
+[data-theme="audius"] .reduced-motion .hexaclear-audius-stage-canvas,
+[data-theme="audius"].reduced-motion .hexaclear-audius-np-eq,
+[data-theme="audius"] .reduced-motion .hexaclear-audius-np-eq {
+  display: none;
+}
+
+/* No breathing live-dot or marquee scroll when reduced motion is requested;
+   the dot stays solid-lit and titles truncate with an ellipsis instead. */
+[data-theme="audius"].reduced-motion .hexaclear-audius-np-dot,
+[data-theme="audius"] .reduced-motion .hexaclear-audius-np-dot {
+  animation: none;
+}
+
+@keyframes hexaclear-audius-stage-kick {
+  0% {
+    opacity: 1;
+    transform: scale(1.025);
+  }
+  62% {
+    opacity: 0.92;
+    transform: scale(1.01);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes hexaclear-audius-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes hexaclear-audius-title-marquee {
+  0%,
+  18% {
+    transform: translateX(0);
+  }
+  62%,
+  78% {
+    transform: translateX(calc(-1 * var(--audius-title-scroll-distance, 0px)));
+  }
+  79%,
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 720px) {
+  [data-theme="audius"] .hexaclear-root {
+    max-width: min(100%, calc(100vw - 0.5rem));
+    padding: 0.32rem;
+    gap: 0.32rem;
+  }
+
+  [data-theme="audius"] .hexaclear-audius-deck {
+    /* Side-by-side title + buttons can't fit on a phone without the big
+       wordmark overlapping the buttons, so stack the header: title on its
+       own row, then a full-width Menu/History row. */
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "brand"
+      "utility"
+      "modes"
+      "readouts";
+    gap: 0.28rem;
+    padding: 0.32rem;
+    border-radius: 0.95rem;
+  }
+
+  [data-theme="audius"] .hexaclear-audius-brand {
+    justify-content: center;
+  }
+
+  [data-theme="audius"] .hexaclear-audius-utility-row {
+    justify-content: stretch;
+  }
+
+  [data-theme="audius"] .hexaclear-audius-mode-bank {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  [data-theme="audius"] .hexaclear-audius-readouts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    min-width: 0;
+  }
+
+  [data-theme="audius"] .hexaclear-audius-transport {
+    grid-template-columns: 1fr;
+    gap: 0.28rem;
+  }
+
+  [data-theme="audius"] .hexaclear-audius-mode,
+  [data-theme="audius"] .hexaclear-audius-menu-button,
+  [data-theme="audius"] .hexaclear-audius-transport-button {
+    min-height: 1.65rem;
+    padding: 0.22rem 0.5rem;
+    font-size: 0.58rem;
+  }
+
+  /* On their own stacked row the buttons fill the full width as an even
+     pair instead of carrying the desktop min-width. */
+  [data-theme="audius"] .hexaclear-audius-utility-row .hexaclear-audius-menu-button,
+  [data-theme="audius"] .hexaclear-audius-utility-row .hexaclear-audius-history-button {
+    min-width: 0;
+  }
+
+  [data-theme="audius"] .hexaclear-audius-readout {
+    padding: 0.28rem 0.42rem;
+  }
+
+  [data-theme="audius"] .readout-value {
+    font-size: 1.18rem;
+  }
+
+  [data-theme="audius"] .hexaclear-audius-transport {
+    padding: 0.3rem;
+  }
+
+  [data-theme="audius"] .hexaclear-audius-transport-actions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  [data-theme="audius"] .hexaclear-audius-media-controls {
+    gap: 0.34rem;
+  }
+
+  [data-theme="audius"] .hexaclear-audius-media-button-row {
+    gap: 0.24rem;
+  }
+
+  [data-theme="audius"] .hexaclear-audius-media-button {
+    width: 2.22rem;
+    height: 2.22rem;
+    min-width: 2.22rem;
+    min-height: 2.22rem;
+  }
+
+  [data-theme="audius"] .hexaclear-audius-media-button.is-play-pause {
+    width: 3rem;
+    height: 3rem;
+    min-width: 3rem;
+    min-height: 3rem;
+  }
+
+  [data-theme="audius"] .hexaclear-audius-title-card {
+    left: 0.65rem;
+    bottom: 0.65rem;
+    width: min(21rem, calc(100% - 1.3rem));
+    grid-template-columns: minmax(0, 1fr);
+    padding: 0.6rem 0.66rem 0.56rem;
+    gap: 0.44rem;
+  }
+
+  [data-theme="audius"] .hexaclear-audius-artwork {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  [data-theme="audius"] .hexaclear-audius-mode-bank,
+  [data-theme="audius"] .hexaclear-audius-transport-actions {
+    justify-content: stretch;
+  }
+
+  [data-theme="audius"] .hexaclear-audius-mode,
+  [data-theme="audius"] .hexaclear-audius-transport-button {
+    flex: 1 1 0;
+  }
+
+  [data-theme="audius"] .hexaclear-audius-search-window {
+    padding: 0.72rem;
+    gap: 0.54rem;
+  }
+
+  [data-theme="audius"] .hexaclear-audius-search-window-head,
+  [data-theme="audius"] .hexaclear-audius-search-window-actions {
+    align-items: stretch;
+  }
+
+  [data-theme="audius"] .hexaclear-audius-vu {
+    display: none;
+  }
+
+  [data-theme="audius"] .hexaclear-board {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* ====================================================================
+   PAUSE MENU — Audius pass. The sheet is deck hardware: near-black
+   glass panel with a teal rail glow, the hero as the lit transport
+   button (teal gradient, dark text), place tiles as inset modules
+   with teal readouts, and the settings groups as the same modules.
+   ==================================================================== */
+[data-theme="audius"] .hexaclear-pmenu {
+  background: linear-gradient(
+    180deg,
+    var(--audius-glass, #080b12) 0%,
+    var(--audius-glass-deep, #030107) 100%
+  );
+  border-radius: 16px;
+  border: 1px solid color-mix(in srgb, var(--audius-cube-left, #42d6bd) 28%, transparent);
+  box-shadow:
+    0 18px 50px rgba(0, 0, 0, 0.7),
+    0 0 26px color-mix(in srgb, var(--audius-cube-left, #42d6bd) 14%, transparent),
+    inset 0 1px 0 rgba(207, 255, 242, 0.12);
+}
+
+[data-theme="audius"] .hexaclear-pmenu-masthead {
+  border-bottom: 1px solid color-mix(in srgb, var(--audius-cube-left, #42d6bd) 24%, transparent);
+}
+
+[data-theme="audius"] .hexaclear-pmenu-kicker {
+  color: var(--audius-ink, #d7fff7);
+  letter-spacing: 0.32em;
+}
+
+[data-theme="audius"] .hexaclear-pmenu-hero,
+[data-theme="audius"] .hexaclear-pmenu-back {
+  background: linear-gradient(
+    180deg,
+    var(--audius-cube-top, #cffff2) 0%,
+    var(--audius-cube-left, #42d6bd) 100%
+  );
+  box-shadow:
+    0 5px 0 var(--audius-cube-right, #115a67),
+    0 6px 0 1px rgba(0, 0, 0, 0.5),
+    0 16px 28px rgba(0, 0, 0, 0.55),
+    0 0 22px color-mix(in srgb, var(--audius-cube-left, #42d6bd) 30%, transparent),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+[data-theme="audius"] .hexaclear-pmenu-hero:hover,
+[data-theme="audius"] .hexaclear-pmenu-back:hover {
+  background: linear-gradient(180deg, #e2fff7 0%, #5fe3cd 100%);
+}
+
+[data-theme="audius"] .hexaclear-pmenu-hero:active,
+[data-theme="audius"] .hexaclear-pmenu-back:active {
+  box-shadow:
+    0 1px 0 var(--audius-cube-right, #115a67),
+    0 2px 0 1px rgba(0, 0, 0, 0.5),
+    0 8px 16px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+[data-theme="audius"] .hexaclear-pmenu-hero-label,
+[data-theme="audius"] .hexaclear-pmenu-back {
+  color: #04211c;
+}
+
+[data-theme="audius"] .hexaclear-pmenu-hero-sub {
+  color: rgba(4, 33, 28, 0.65);
+}
+
+[data-theme="audius"] .hexaclear-pmenu-tile,
+[data-theme="audius"]
+  .hexaclear-pmenu-settings-body
+  .hexaclear-menu-settings-group {
+  border-radius: 10px;
+  border: 1px solid color-mix(in srgb, var(--audius-cube-left, #42d6bd) 22%, transparent);
+  background: rgba(2, 4, 8, 0.55);
+  box-shadow:
+    inset 0 2px 8px rgba(0, 0, 0, 0.6),
+    inset 0 -1px 0 color-mix(in srgb, var(--audius-cube-left, #42d6bd) 10%, transparent);
+}
+
+[data-theme="audius"] .hexaclear-pmenu-tile:hover,
+[data-theme="audius"] .hexaclear-pmenu-tile:focus-visible {
+  border-color: color-mix(in srgb, var(--audius-cube-left, #42d6bd) 55%, transparent);
+  background: rgba(2, 4, 8, 0.4);
+}
+
+[data-theme="audius"] .hexaclear-pmenu-tile-title {
+  color: var(--audius-ink, #d7fff7);
+}
+
+[data-theme="audius"] .hexaclear-pmenu-tile-stat,
+[data-theme="audius"]
+  .hexaclear-pmenu-settings-body
+  .hexaclear-menu-settings-group-label {
+  color: var(--audius-cube-left, #42d6bd);
+}
+
+[data-theme="audius"] .hexaclear-pmenu-settings-title {
+  color: var(--audius-ink, #d7fff7);
+}
+
+[data-theme="audius"] .hexaclear-pmenu-runlink {
+  color: var(--audius-muted, #7ea8a2);
+}
+
+[data-theme="audius"] .hexaclear-pmenu-runlink.is-warn {
+  color: var(--audius-amber, #c8732c);
+}
+
+[data-theme="audius"] .hexaclear-pmenu-runlink.is-danger {
+  color: #ff6a8a;
+}
+
+[data-theme="audius"] .hexaclear-pmenu-settings-chip {
+  border: 1px solid color-mix(in srgb, var(--audius-cube-left, #42d6bd) 35%, transparent);
+  background: rgba(2, 4, 8, 0.45);
+  color: var(--audius-ink, #d7fff7);
+}
+
+[data-theme="audius"] .hexaclear-pmenu-utility {
+  border-top: 1px solid color-mix(in srgb, var(--audius-cube-left, #42d6bd) 18%, transparent);
+}
+
+/* Stats dashboard accent — rides the audio-reactive cube hue. */
+:root[data-theme="audius"] {
+  --dash-accent: var(--audius-cube-top, #b483ff);
+  --dash-accent-ink: #120a1f;
+  --dash-radius: 12px;
+}
